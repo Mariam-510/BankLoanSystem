@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "uDPFGNALs2JTVAYR607snVcU15mTRqPZir0AGGyIIqs=",
+  "Source": "BankLoanSystem.API",
+  "BasePath": "_content/BankLoanSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BankLoanSystem.API\\wwwroot",
+      "Source": "BankLoanSystem.API",
+      "ContentRoot": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\",
+      "BasePath": "_content/BankLoanSystem.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

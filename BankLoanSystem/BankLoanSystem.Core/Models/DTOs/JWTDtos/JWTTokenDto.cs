@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BankLoanSystem.Core.Models.DTOs.JWTDtos
+{
+    public class JWTTokenDto
+    {
+        public string JwtToken { get; set; }
+    }
+}
