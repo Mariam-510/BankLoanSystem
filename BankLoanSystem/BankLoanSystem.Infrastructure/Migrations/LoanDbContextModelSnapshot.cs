@@ -22,7 +22,7 @@ namespace BankLoanSystem.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Account", b =>
+            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.AppUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -44,8 +44,17 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -93,69 +102,6 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Admin", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AccountId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AccountId");
-
-                    b.ToTable("Admins");
-                });
-
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Client", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AccountId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AccountId");
-
-                    b.ToTable("Clients");
-                });
-
             modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Loan", b =>
                 {
                     b.Property<int>("Id")
@@ -167,8 +113,9 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("ClientId")
-                        .HasColumnType("int");
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -195,7 +142,7 @@ namespace BankLoanSystem.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClientId");
+                    b.HasIndex("AppUserId");
 
                     b.HasIndex("LoanTypeId");
 
@@ -209,6 +156,9 @@ namespace BankLoanSystem.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -353,33 +303,11 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Admin", b =>
-                {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Account", "Account")
-                        .WithMany()
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Account");
-                });
-
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Client", b =>
-                {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Account", "Account")
-                        .WithMany()
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Account");
-                });
-
             modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Loan", b =>
                 {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Client", "Client")
+                    b.HasOne("BankLoanSystem.Core.Models.Entities.AppUser", "AppUser")
                         .WithMany("Loans")
-                        .HasForeignKey("ClientId")
+                        .HasForeignKey("AppUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -389,7 +317,7 @@ namespace BankLoanSystem.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Client");
+                    b.Navigation("AppUser");
 
                     b.Navigation("LoanType");
                 });
@@ -405,7 +333,7 @@ namespace BankLoanSystem.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Account", null)
+                    b.HasOne("BankLoanSystem.Core.Models.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -414,7 +342,7 @@ namespace BankLoanSystem.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Account", null)
+                    b.HasOne("BankLoanSystem.Core.Models.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -429,7 +357,7 @@ namespace BankLoanSystem.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Account", null)
+                    b.HasOne("BankLoanSystem.Core.Models.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -438,14 +366,14 @@ namespace BankLoanSystem.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.Account", null)
+                    b.HasOne("BankLoanSystem.Core.Models.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Client", b =>
+            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.AppUser", b =>
                 {
                     b.Navigation("Loans");
                 });

@@ -1,0 +1,1 @@
+2025-07-28 14:25:52.881 +03:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.

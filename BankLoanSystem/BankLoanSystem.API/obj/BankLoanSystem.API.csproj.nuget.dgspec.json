@@ -102,6 +102,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -221,6 +225,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[8.2.2, )"
             }
           },
           "imports": [
@@ -330,6 +338,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[8.2.2, )"
             }
           },
           "imports": [
@@ -443,6 +455,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[8.2.2, )"
             }
           },
           "imports": [

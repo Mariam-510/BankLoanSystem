@@ -48,7 +48,6 @@ namespace BankLoanSystem.Infrastructure.Repositories
                 return null;
             }
 
-            // Explicitly mark as modified
             _dbContext.LoanTypes.Update(existingLoanType);
 
             await _dbContext.SaveChangesAsync();

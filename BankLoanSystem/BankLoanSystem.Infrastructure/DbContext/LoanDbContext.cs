@@ -1,4 +1,4 @@
-﻿using BankLoanSystem.Core.Models.Entities;
+﻿    using BankLoanSystem.Core.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,10 +11,8 @@ using System.Threading.Tasks;
 
 namespace BankLoanSystem.Infrastructure.DbContext
 {
-    public class LoanDbContext : IdentityDbContext<Account>
+    public class LoanDbContext : IdentityDbContext<AppUser>
     {
-        public DbSet<Client> Clients { get; set; }
-        public DbSet<Admin> Admins { get; set; }
         public DbSet<Loan> Loans { get; set; }
         public DbSet<LoanType> LoanTypes { get; set; }
 

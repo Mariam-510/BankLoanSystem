@@ -1,13 +1,16 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BankLoanSystem.Core.Models.Entities;
+using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
+
 
 namespace BankLoanSystem.Application.Mapping
 {
-    internal class AutoMapperProfile : Profile
+    public class AutoMapperProfile : Profile
     {
+        public AutoMapperProfile()
+        {
+            CreateMap<LoanType, LoanTypeDto>().ReverseMap();
+        }
+
     }
 }

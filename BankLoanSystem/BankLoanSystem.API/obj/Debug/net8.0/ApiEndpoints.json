@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "BankLoanSystem.API.Controllers.ValuesController",
+    "Method": "Get",
+    "RelativePath": "api/Values",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

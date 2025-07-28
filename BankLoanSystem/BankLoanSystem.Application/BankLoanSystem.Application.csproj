@@ -7,12 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CQRS\Commands\" />
-    <Folder Include="CQRS\Handlers\" />
-    <Folder Include="CQRS\Queries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="MailKit" Version="4.13.0" />
     <PackageReference Include="MediatR" Version="13.0.0" />
@@ -26,6 +20,7 @@
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="8.2.2" />
   </ItemGroup>
 
   <ItemGroup>
