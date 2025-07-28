@@ -11,6 +11,6 @@ namespace BankLoanSystem.Core.Interfaces.Services
 {
     public interface IJWTService
     {
-        string CreateJWTToken(Account appUser, List<string> roles, UserClaimsDto userData);
+        string CreateJWTToken(AppUser appUser, List<string> roles);
     }
 }

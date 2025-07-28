@@ -23,7 +23,7 @@ namespace BankLoanSystem.Application.Services
         {
             this.configuration = configuration;
         }
-        public string CreateJWTToken(Account appUser, List<string> roles, UserClaimsDto userData)
+        public string CreateJWTToken(AppUser appUser, List<string> roles)
         {
             var claims = new List<Claim>
             {

@@ -36,10 +36,10 @@ namespace BankLoanSystem.Core.Models.Entities
         [Required]
         public string SalarySlipPath { get; set; } = string.Empty;
 
-        [ForeignKey("Client")]
+        [ForeignKey("AppUser")]
         [Required]
-        public int ClientId { get; set; }
-        public Client? Client { get; set; }
+        public string AppUserId { get; set; }
+        public AppUser? AppUser { get; set; }
 
         [Required]
         [ForeignKey("LoanType")]

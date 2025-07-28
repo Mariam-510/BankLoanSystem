@@ -1,0 +1,3 @@
+2025-07-28 14:25:52.881 +03:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-07-28 14:25:52.919 +03:00 [INF]  Starting request GET /api/Values
+2025-07-28 14:25:52.998 +03:00 [INF]  Completed request GET /api/Values with status 200 in 78ms

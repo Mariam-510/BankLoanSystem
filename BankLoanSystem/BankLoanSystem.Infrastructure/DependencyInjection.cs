@@ -27,9 +27,9 @@ namespace BankLoanSystem.Infrastructure
             opt.UseSqlServer(configuration.GetConnectionString("BankLoanConnection"))
             );
 
-            services.AddIdentityCore<Account>()
+            services.AddIdentityCore<AppUser>()
                 .AddRoles<IdentityRole>()
-                .AddTokenProvider<DataProtectorTokenProvider<Account>>("Bank Loan System")
+                .AddTokenProvider<DataProtectorTokenProvider<AppUser>>("Bank Loan System")
                 .AddEntityFrameworkStores<LoanDbContext>()
                 .AddDefaultTokenProviders();
 
@@ -69,7 +69,8 @@ namespace BankLoanSystem.Infrastructure
 
 
             // Add Scoped for repositories
-            services.AddScoped<IPasswordValidator<Account>, PasswordLengthValidator<Account>>();
+            services.AddScoped<IPasswordValidator<AppUser>, PasswordLengthValidator<AppUser>>();
+            services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<ILoanTypeRepository, LoanTypeRepository>();
 
 

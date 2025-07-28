@@ -4,7 +4,20 @@
     "title": "Loan System API",
     "version": "v1"
   },
-  "paths": { },
+  "paths": {
+    "/api/Values": {
+      "get": {
+        "tags": [
+          "Values"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
   "components": {
     "securitySchemes": {
       "Bearer": {
