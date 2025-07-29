@@ -24,6 +24,14 @@ namespace BankLoanSystem.Core.Models.Entities
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        public string? EmailConfirmationCode { get; set; }
+
+        public DateTime? CodeGeneratedAt { get; set; }
+
+        public string? PasswordResetCode { get; set; }
+
+        public DateTime? ResetCodeGeneratedAt { get; set; }
+
         public bool IsDeleted { get; set; } = false;
         public ICollection<Loan>? Loans { get; set; }
 

@@ -1,0 +1,316 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/0c346aa5-acef-456b-8d97-b1992c4db98b.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\0c346aa5-acef-456b-8d97-b1992c4db98b.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/0c346aa5-acef-456b-8d97-b1992c4db98b.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\0c346aa5-acef-456b-8d97-b1992c4db98b.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/0c346aa5-acef-456b-8d97-b1992c4db98b.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/1b3daa62-39f5-46da-a1b3-332e71d62de3.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\1b3daa62-39f5-46da-a1b3-332e71d62de3.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/1b3daa62-39f5-46da-a1b3-332e71d62de3.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\1b3daa62-39f5-46da-a1b3-332e71d62de3.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/1b3daa62-39f5-46da-a1b3-332e71d62de3.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/1fee3591-34a4-4930-97e9-fd081b72bba5.1uqlo22z11.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\1fee3591-34a4-4930-97e9-fd081b72bba5.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1uqlo22z11"},{"Name":"integrity","Value":"sha256-50Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/1fee3591-34a4-4930-97e9-fd081b72bba5.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"161286"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002250Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/1fee3591-34a4-4930-97e9-fd081b72bba5.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\1fee3591-34a4-4930-97e9-fd081b72bba5.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-50Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"161286"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002250Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/2b9bae60-9b04-4ed3-930c-0bfe30389400.iecmk8d23b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\2b9bae60-9b04-4ed3-930c-0bfe30389400.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iecmk8d23b"},{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/2b9bae60-9b04-4ed3-930c-0bfe30389400.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/2b9bae60-9b04-4ed3-930c-0bfe30389400.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\2b9bae60-9b04-4ed3-930c-0bfe30389400.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/39618de3-69cd-4ee4-8558-60e2ad8ceccd.iecmk8d23b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\39618de3-69cd-4ee4-8558-60e2ad8ceccd.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iecmk8d23b"},{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/39618de3-69cd-4ee4-8558-60e2ad8ceccd.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/39618de3-69cd-4ee4-8558-60e2ad8ceccd.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\39618de3-69cd-4ee4-8558-60e2ad8ceccd.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/4336fb24-df33-4c77-a97a-16d950b65592.1uqlo22z11.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\4336fb24-df33-4c77-a97a-16d950b65592.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1uqlo22z11"},{"Name":"integrity","Value":"sha256-50Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/4336fb24-df33-4c77-a97a-16d950b65592.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"161286"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002250Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/4336fb24-df33-4c77-a97a-16d950b65592.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\4336fb24-df33-4c77-a97a-16d950b65592.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-50Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"161286"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002250Se/glrXfGK90v9Kioeek97rv8sQdpsUQa01ELzeuA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/49b7d94b-456f-42bb-8bda-905c6789e92b.iecmk8d23b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\49b7d94b-456f-42bb-8bda-905c6789e92b.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iecmk8d23b"},{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/49b7d94b-456f-42bb-8bda-905c6789e92b.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 20:12:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/49b7d94b-456f-42bb-8bda-905c6789e92b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\49b7d94b-456f-42bb-8bda-905c6789e92b.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 20:12:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/529244aa-fb35-4c86-bef9-0b81bd00ba0a.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\529244aa-fb35-4c86-bef9-0b81bd00ba0a.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/529244aa-fb35-4c86-bef9-0b81bd00ba0a.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\529244aa-fb35-4c86-bef9-0b81bd00ba0a.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/529244aa-fb35-4c86-bef9-0b81bd00ba0a.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/6f7f3e6e-b8bb-420e-b538-9b42166a0b44.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\6f7f3e6e-b8bb-420e-b538-9b42166a0b44.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:11:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/6f7f3e6e-b8bb-420e-b538-9b42166a0b44.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\6f7f3e6e-b8bb-420e-b538-9b42166a0b44.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/6f7f3e6e-b8bb-420e-b538-9b42166a0b44.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:11:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/844cfb03-88fa-4803-ae01-dcda09e60d07.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\844cfb03-88fa-4803-ae01-dcda09e60d07.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:14:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/844cfb03-88fa-4803-ae01-dcda09e60d07.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\844cfb03-88fa-4803-ae01-dcda09e60d07.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/844cfb03-88fa-4803-ae01-dcda09e60d07.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:14:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/af3029be-d093-4857-86af-9ada4214117c.iecmk8d23b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\af3029be-d093-4857-86af-9ada4214117c.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iecmk8d23b"},{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/af3029be-d093-4857-86af-9ada4214117c.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:04:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/af3029be-d093-4857-86af-9ada4214117c.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\af3029be-d093-4857-86af-9ada4214117c.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:04:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/b61fe187-dcc0-47d1-884c-74d30b0db84c.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/ef571f8b-bf77-4c2a-ba38-8a8ed388739f.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\ef571f8b-bf77-4c2a-ba38-8a8ed388739f.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/NationalIds/ef571f8b-bf77-4c2a-ba38-8a8ed388739f.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\ef571f8b-bf77-4c2a-ba38-8a8ed388739f.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/NationalIds/ef571f8b-bf77-4c2a-ba38-8a8ed388739f.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/1dbc0b78-c1f8-44c3-8b38-af0ca24b2488.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\1dbc0b78-c1f8-44c3-8b38-af0ca24b2488.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/1dbc0b78-c1f8-44c3-8b38-af0ca24b2488.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\1dbc0b78-c1f8-44c3-8b38-af0ca24b2488.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/1dbc0b78-c1f8-44c3-8b38-af0ca24b2488.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/38322a96-c133-479e-8684-5ca3184768f6.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\38322a96-c133-479e-8684-5ca3184768f6.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/38322a96-c133-479e-8684-5ca3184768f6.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\38322a96-c133-479e-8684-5ca3184768f6.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/38322a96-c133-479e-8684-5ca3184768f6.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/47574d4d-7338-4c60-9b46-d67ef764317b.iecmk8d23b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\47574d4d-7338-4c60-9b46-d67ef764317b.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iecmk8d23b"},{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/47574d4d-7338-4c60-9b46-d67ef764317b.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/47574d4d-7338-4c60-9b46-d67ef764317b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\47574d4d-7338-4c60-9b46-d67ef764317b.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/48f73924-0052-4d1d-a4ee-12f6808d8706.iecmk8d23b.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\48f73924-0052-4d1d-a4ee-12f6808d8706.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iecmk8d23b"},{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/48f73924-0052-4d1d-a4ee-12f6808d8706.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/48f73924-0052-4d1d-a4ee-12f6808d8706.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\48f73924-0052-4d1d-a4ee-12f6808d8706.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SuzUuo\u002BC26cfzbIxMFnTZlDV6ygoTtX\u002BbWFkhahgRYk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:37:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/6a5b2410-44da-42d0-b503-a76b80674555.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\6a5b2410-44da-42d0-b503-a76b80674555.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:14:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/6a5b2410-44da-42d0-b503-a76b80674555.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\6a5b2410-44da-42d0-b503-a76b80674555.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/6a5b2410-44da-42d0-b503-a76b80674555.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:14:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 20:12:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/7a8c0276-d1d6-4b53-ba35-b2dfa561de47.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 20:12:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:04:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:04:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/b2c0817b-78ea-40c0-acfa-0ed557e5a676.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\b2c0817b-78ea-40c0-acfa-0ed557e5a676.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/b2c0817b-78ea-40c0-acfa-0ed557e5a676.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\b2c0817b-78ea-40c0-acfa-0ed557e5a676.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/b2c0817b-78ea-40c0-acfa-0ed557e5a676.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/b56f1f27-4319-42de-81a2-bbd317400f1c.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\b56f1f27-4319-42de-81a2-bbd317400f1c.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/b56f1f27-4319-42de-81a2-bbd317400f1c.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\b56f1f27-4319-42de-81a2-bbd317400f1c.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/b56f1f27-4319-42de-81a2-bbd317400f1c.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/c240b02e-bef6-4f32-a6e4-4fe9ae650dce.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\c240b02e-bef6-4f32-a6e4-4fe9ae650dce.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/c240b02e-bef6-4f32-a6e4-4fe9ae650dce.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\c240b02e-bef6-4f32-a6e4-4fe9ae650dce.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/c240b02e-bef6-4f32-a6e4-4fe9ae650dce.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:03:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/cf3de06e-7db4-4413-a8ae-9e094e35e03b.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\cf3de06e-7db4-4413-a8ae-9e094e35e03b.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/cf3de06e-7db4-4413-a8ae-9e094e35e03b.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\cf3de06e-7db4-4413-a8ae-9e094e35e03b.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/cf3de06e-7db4-4413-a8ae-9e094e35e03b.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:12:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/d57e7533-b982-40f3-95a6-f1b9ae635451.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\d57e7533-b982-40f3-95a6-f1b9ae635451.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/d57e7533-b982-40f3-95a6-f1b9ae635451.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\d57e7533-b982-40f3-95a6-f1b9ae635451.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/d57e7533-b982-40f3-95a6-f1b9ae635451.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:13:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/f3d2815d-abfc-479d-a196-ff512ff909c9.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\f3d2815d-abfc-479d-a196-ff512ff909c9.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:11:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanSystem.API/SalarySlips/f3d2815d-abfc-479d-a196-ff512ff909c9.x8ykchb646.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\f3d2815d-abfc-479d-a196-ff512ff909c9.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8ykchb646"},{"Name":"integrity","Value":"sha256-YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k="},{"Name":"label","Value":"_content/BankLoanSystem.API/SalarySlips/f3d2815d-abfc-479d-a196-ff512ff909c9.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89793"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YYougJy026IgvkiEuNN5RGZf\u002BvR/14c\u002BsMPoYRpL89k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 19:11:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

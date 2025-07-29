@@ -5,10 +5,12 @@ using BankLoanSystem.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Serilog;
 using BankLoanSystem.API.Middlewares;
-using BankLoanSystem.API.ResponseModels;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Text.Json;
-using BankLoanSystem.API.Filters;
+using System.Reflection;
+using BankLoanSystem.Application.CQRS.Handlers.LoanType;
+using Microsoft.AspNetCore.Mvc;
+using BankLoanSystem.Core.Models.ResponseModels;
 
 namespace BankLoanSystem.API
 {
@@ -19,11 +21,7 @@ namespace BankLoanSystem.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
-            builder.Services.AddControllers(options =>
-            {
-                options.Filters.Add<ApiResponseFilter>();
-            });
+            builder.Services.AddControllers();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -73,6 +71,7 @@ namespace BankLoanSystem.API
 
             //Service Collection
             builder.Services.AddApplication();
+
             builder.Services.AddInfrastructure(builder.Configuration);
 
 
@@ -81,7 +80,21 @@ namespace BankLoanSystem.API
             .ReadFrom.Configuration(builder.Configuration)
             .CreateLogger();
 
+
             builder.Host.UseSerilog();
+
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllLoanTypesHandler).Assembly));
+
+
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = actionContext =>
+                {
+                    return new BadRequestObjectResult(
+                        ApiResponse<object>.ErrorResponse(errors: actionContext.ModelState.Values.SelectMany(x => x.Errors)
+                        .Select(x => x.ErrorMessage).ToList()));
+                };
+            });
 
             var app = builder.Build();
 
@@ -98,6 +111,7 @@ namespace BankLoanSystem.API
             {
                 appError.Run(async context =>
                 {
+                    
                     context.Response.ContentType = "application/json";
                     var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
 

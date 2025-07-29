@@ -23,6 +23,9 @@ namespace BankLoanSystem.Infrastructure.DbContext
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            //SeedRoles
+            DbInitializer.SeedRoles(builder);
         }
     }
 }

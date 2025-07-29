@@ -17,11 +17,11 @@ namespace BankLoanSystem.Core.Models.Entities
 
         [Required]
         [Column(TypeName = "decimal(18,2)")]
-        [NonNegative]
+        [NonNegative("Amount must be non-negative")]
         public decimal Amount { get; set; }
 
         [Required]
-        [NonNegative]
+        [NonNegative("Duration must be non-negative")]
         public int Duration { get; set; }
 
         public LoanStatus Status { get; set; } = LoanStatus.Pending;
