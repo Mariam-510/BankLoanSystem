@@ -6,6 +6,9 @@ namespace BankLoanSystem.Core.Models.Attributes
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
     public class NonNegativeAttribute : ValidationAttribute
     {
+        public NonNegativeAttribute(string errorMessage = "Value must be non-negative.") : base(errorMessage)
+        {
+        }
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             if (value == null)
@@ -16,11 +19,9 @@ namespace BankLoanSystem.Core.Models.Attributes
             switch (value)
             {
                 case int intValue when intValue < 0:
-                    return new ValidationResult("Value must be non-negative.");
                 case decimal decimalValue when decimalValue < 0:
-                    return new ValidationResult("Value must be non-negative.");
                 case double doubleValue when doubleValue < 0:
-                    return new ValidationResult("Value must be non-negative.");
+                    return new ValidationResult(ErrorMessage);
             }
 
             return ValidationResult.Success;

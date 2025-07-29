@@ -20,10 +20,10 @@ namespace BankLoanSystem.Application.CQRS.Handlers.LoanType
 
         public async Task<bool> Handle(DeleteLoanTypeCommand request, CancellationToken cancellationToken)
         {
-            var existing = await _repository.GetByIdAsync(request.Id);
+            var existing = await _repository.DeleteAsync(request.Id);
+            
             if (existing == null) return false;
 
-            await _repository.DeleteAsync(request.Id);
             return true;
         }
     }

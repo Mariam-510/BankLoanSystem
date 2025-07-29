@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BankLoanSystem.Application.CQRS.Queries;
+using BankLoanSystem.Application.CQRS.Queries.LoanType;
 using BankLoanSystem.Core.Interfaces.Repositories;
 using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
 using MediatR;
@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace BankLoanSystem.Application.CQRS.Handlers.LoanType
 {
-    // GetAllLoanTypesHandler.cs
     public class GetAllLoanTypesHandler : IRequestHandler<GetAllLoanTypesQuery, List<LoanTypeDto>>
     {
         private readonly ILoanTypeRepository _repository;
@@ -32,4 +31,5 @@ namespace BankLoanSystem.Application.CQRS.Handlers.LoanType
 
         }
     }
+
 }

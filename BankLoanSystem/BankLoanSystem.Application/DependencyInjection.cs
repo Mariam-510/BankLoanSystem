@@ -17,6 +17,7 @@ namespace BankLoanSystem.Application
             services.AddAutoMapper(typeof(AutoMapperProfile));
 
 
+            services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IFileService, FileService>();
             services.AddScoped<IJWTService, JWTService>();

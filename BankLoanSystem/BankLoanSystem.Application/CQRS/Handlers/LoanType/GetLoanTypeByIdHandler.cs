@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BankLoanSystem.Application.CQRS.Queries;
+using BankLoanSystem.Application.CQRS.Queries.LoanType;
 using BankLoanSystem.Core.Interfaces.Repositories;
 using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
 using BankLoanSystem.Core.Models.Entities;

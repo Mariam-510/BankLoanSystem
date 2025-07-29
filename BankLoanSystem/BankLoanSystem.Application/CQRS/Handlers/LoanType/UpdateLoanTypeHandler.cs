@@ -1,5 +1,7 @@
-﻿using BankLoanSystem.Application.CQRS.Commands.LoanType;
+﻿using AutoMapper;
+using BankLoanSystem.Application.CQRS.Commands.LoanType;
 using BankLoanSystem.Core.Interfaces.Repositories;
+using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,23 +11,28 @@ using System.Threading.Tasks;
 
 namespace BankLoanSystem.Application.CQRS.Handlers.LoanType
 {
-    public class UpdateLoanTypeHandler : IRequestHandler<UpdateLoanTypeCommand, bool>
+    public class UpdateLoanTypeHandler : IRequestHandler<UpdateLoanTypeCommand, LoanTypeDto?>
     {
         private readonly ILoanTypeRepository _repository;
+        private readonly IMapper _mapper;
 
-        public UpdateLoanTypeHandler(ILoanTypeRepository repository)
+        public UpdateLoanTypeHandler(ILoanTypeRepository repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
-        public async Task<bool> Handle(UpdateLoanTypeCommand request, CancellationToken cancellationToken)
+        public async Task<LoanTypeDto?> Handle(UpdateLoanTypeCommand request, CancellationToken cancellationToken)
         {
-            var existing = await _repository.GetByIdAsync(request.Id);
-            if (existing == null) return false;
+            var existing = await _repository.GetByIdAsync((int) request.Id);
+            if (existing == null) return null;
 
             existing.Name = request.Name;
-            await _repository.UpdateAsync(request.Id, existing);
-            return true;
+            var loanType = await _repository.UpdateAsync((int) request.Id, existing);
+
+            var loanTypeDto = _mapper.Map<LoanTypeDto>(loanType);
+
+            return loanTypeDto;
         }
     }
 }
