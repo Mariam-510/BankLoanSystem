@@ -9,6 +9,7 @@ wwwroot\NationalIds\529244aa-fb35-4c86-bef9-0b81bd00ba0a.JPG
 wwwroot\NationalIds\6f7f3e6e-b8bb-420e-b538-9b42166a0b44.JPG
 wwwroot\NationalIds\844cfb03-88fa-4803-ae01-dcda09e60d07.JPG
 wwwroot\NationalIds\af3029be-d093-4857-86af-9ada4214117c.jpeg
+wwwroot\NationalIds\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg
 wwwroot\NationalIds\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG
 wwwroot\NationalIds\ef571f8b-bf77-4c2a-ba38-8a8ed388739f.JPG
 wwwroot\SalarySlips\1dbc0b78-c1f8-44c3-8b38-af0ca24b2488.JPG
@@ -17,6 +18,7 @@ wwwroot\SalarySlips\47574d4d-7338-4c60-9b46-d67ef764317b.jpeg
 wwwroot\SalarySlips\48f73924-0052-4d1d-a4ee-12f6808d8706.jpeg
 wwwroot\SalarySlips\6a5b2410-44da-42d0-b503-a76b80674555.JPG
 wwwroot\SalarySlips\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG
+wwwroot\SalarySlips\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG
 wwwroot\SalarySlips\a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG
 wwwroot\SalarySlips\b2c0817b-78ea-40c0-acfa-0ed557e5a676.JPG
 wwwroot\SalarySlips\b56f1f27-4319-42de-81a2-bbd317400f1c.JPG

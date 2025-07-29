@@ -4,6 +4,7 @@ using BankLoanSystem.Application.CQRS.Queries.LoanType;
 using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
 using BankLoanSystem.Core.Models.ResponseModels;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -44,6 +45,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] CreateLoanTypeCommand command)
         {
             var result = await _mediator.Send(command);
@@ -52,6 +54,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateLoanTypeCommand command)
         {
             command.Id = id;
@@ -69,6 +72,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var success = await _mediator.Send(new DeleteLoanTypeCommand(id));

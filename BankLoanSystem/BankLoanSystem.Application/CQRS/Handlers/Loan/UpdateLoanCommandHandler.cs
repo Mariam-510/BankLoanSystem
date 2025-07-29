@@ -32,6 +32,11 @@ namespace BankLoanSystem.Application.CQRS.Handlers.Loan
             var existingLoan = await _loanRepository.GetByIdAsync((int) request.Id);
             if (existingLoan == null) return null;
 
+            if (existingLoan.AppUserId != request.CurrentUserId)
+            {
+                return null;
+            }
+
             if (existingLoan.Status != LoanStatus.Pending)
                 return null;
 

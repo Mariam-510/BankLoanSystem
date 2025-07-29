@@ -1,2 +1,2 @@
-E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\wwwroot\NationalIds\07310ec5-9117-43ee-ac8d-2cf6182b3d3f.JPG
-E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\wwwroot\SalarySlips\8bdb72a7-c034-489f-a488-30dc9bbac809.JPG
+E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\wwwroot\NationalIds\844cfb03-88fa-4803-ae01-dcda09e60d07.JPG
+E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\wwwroot\SalarySlips\6a5b2410-44da-42d0-b503-a76b80674555.JPG

@@ -50,7 +50,7 @@ namespace BankLoanSystem.Infrastructure.DbContext
                     Email = "admin1@gmail.com",
                     NormalizedEmail = "ADMIN1@GMAIL.COM",
                     EmailConfirmed = true,
-                    PasswordHash = "", //Admin@123
+                    PasswordHash = "AQAAAAIAAYagAAAAEG7/LUrcXKZaK3krqZoKCu3SYiqlupsTeHA4lnjWi0QONNvF0hF5zBNXYhZKBOwh/Q==", //Admin@123
                     SecurityStamp = "31012730-e125-4ecb-8811-38744d3a6160",
                     ConcurrencyStamp = "223d0eed-1b02-44c7-9bae-baae3508f127",
                     PhoneNumberConfirmed = false,
