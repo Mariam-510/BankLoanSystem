@@ -5,18 +5,6 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Auth/TestAuth": {
-      "get": {
-        "tags": [
-          "Auth"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Auth/Register": {
       "post": {
         "tags": [
@@ -492,6 +480,9 @@
                   "SalarySlip": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "CurrentUserId": {
+                    "type": "string"
                   }
                 }
               },
@@ -509,6 +500,9 @@
                   "style": "form"
                 },
                 "SalarySlip": {
+                  "style": "form"
+                },
+                "CurrentUserId": {
                   "style": "form"
                 }
               }
@@ -543,20 +537,10 @@
         }
       }
     },
-    "/api/Loans/user/{appUserId}": {
+    "/api/Loans/user": {
       "get": {
         "tags": [
           "Loans"
-        ],
-        "parameters": [
-          {
-            "name": "appUserId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {

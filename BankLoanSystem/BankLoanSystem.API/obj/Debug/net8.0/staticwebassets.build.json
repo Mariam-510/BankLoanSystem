@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "obTpUaywIZT0eqAMnFaWYC8+nHt44jQbVLnxFL5FYzI=",
+  "Hash": "pNPG5a/7Chz5XjH8XT/b6PrQyw5HNQu0+nDqeSjo48c=",
   "Source": "BankLoanSystem.API",
   "BasePath": "_content/BankLoanSystem.API",
   "Mode": "Default",
@@ -248,6 +248,27 @@
       "OriginalItemSpec": "wwwroot\\NationalIds\\af3029be-d093-4857-86af-9ada4214117c.jpeg"
     },
     {
+      "Identity": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg",
+      "SourceId": "BankLoanSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\",
+      "BasePath": "_content/BankLoanSystem.API",
+      "RelativePath": "NationalIds/b14fd92a-282a-4897-8e19-46af373a4ee9#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iecmk8d23b",
+      "Integrity": "SuzUuo+C26cfzbIxMFnTZlDV6ygoTtX+bWFkhahgRYk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NationalIds\\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg"
+    },
+    {
       "Identity": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG",
       "SourceId": "BankLoanSystem.API",
       "SourceType": "Discovered",
@@ -414,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\SalarySlips\\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG"
+    },
+    {
+      "Identity": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG",
+      "SourceId": "BankLoanSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\",
+      "BasePath": "_content/BankLoanSystem.API",
+      "RelativePath": "SalarySlips/9668034a-1ca9-4f72-a871-7aea0235e7f0#[.{fingerprint}]?.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x8ykchb646",
+      "Integrity": "YYougJy026IgvkiEuNN5RGZf+vR/14c+sMPoYRpL89k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\SalarySlips\\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG"
     },
     {
       "Identity": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG",
@@ -1467,6 +1509,88 @@
       ]
     },
     {
+      "Route": "NationalIds/b14fd92a-282a-4897-8e19-46af373a4ee9.iecmk8d23b.jpeg",
+      "AssetFile": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SuzUuo+C26cfzbIxMFnTZlDV6ygoTtX+bWFkhahgRYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:48:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iecmk8d23b"
+        },
+        {
+          "Name": "label",
+          "Value": "NationalIds/b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SuzUuo+C26cfzbIxMFnTZlDV6ygoTtX+bWFkhahgRYk="
+        }
+      ]
+    },
+    {
+      "Route": "NationalIds/b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg",
+      "AssetFile": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SuzUuo+C26cfzbIxMFnTZlDV6ygoTtX+bWFkhahgRYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:48:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SuzUuo+C26cfzbIxMFnTZlDV6ygoTtX+bWFkhahgRYk="
+        }
+      ]
+    },
+    {
       "Route": "NationalIds/b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG",
       "AssetFile": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG",
       "Selectors": [],
@@ -2115,6 +2239,88 @@
         {
           "Name": "label",
           "Value": "SalarySlips/7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YYougJy026IgvkiEuNN5RGZf+vR/14c+sMPoYRpL89k="
+        }
+      ]
+    },
+    {
+      "Route": "SalarySlips/9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG",
+      "AssetFile": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89793"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YYougJy026IgvkiEuNN5RGZf+vR/14c+sMPoYRpL89k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:48:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YYougJy026IgvkiEuNN5RGZf+vR/14c+sMPoYRpL89k="
+        }
+      ]
+    },
+    {
+      "Route": "SalarySlips/9668034a-1ca9-4f72-a871-7aea0235e7f0.x8ykchb646.JPG",
+      "AssetFile": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89793"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YYougJy026IgvkiEuNN5RGZf+vR/14c+sMPoYRpL89k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:48:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x8ykchb646"
+        },
+        {
+          "Name": "label",
+          "Value": "SalarySlips/9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG"
         },
         {
           "Name": "integrity",

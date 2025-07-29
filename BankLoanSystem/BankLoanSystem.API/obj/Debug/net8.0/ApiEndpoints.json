@@ -153,16 +153,6 @@
   },
   {
     "ContainingType": "BankLoanSystem.API.Controllers.AuthController",
-    "Method": "TestAuth",
-    "RelativePath": "api/Auth/TestAuth",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankLoanSystem.API.Controllers.AuthController",
     "Method": "ValidateResetCode",
     "RelativePath": "api/Auth/ValidateResetCode",
     "HttpMethod": "POST",
@@ -281,6 +271,11 @@
         "Name": "SalarySlip",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      },
+      {
+        "Name": "CurrentUserId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -341,17 +336,11 @@
   {
     "ContainingType": "BankLoanSystem.API.Controllers.LoansController",
     "Method": "GetByUser",
-    "RelativePath": "api/Loans/user/{appUserId}",
+    "RelativePath": "api/Loans/user",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "appUserId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

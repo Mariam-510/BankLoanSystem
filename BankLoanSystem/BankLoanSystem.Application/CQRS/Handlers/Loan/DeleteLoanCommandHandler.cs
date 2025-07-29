@@ -26,6 +26,11 @@ namespace BankLoanSystem.Application.CQRS.Handlers.Loan
             if (loan == null)
                 return false;
 
+            if (loan.AppUserId != request.CurrentUserId)
+            {
+                return false;
+            }
+
             if (loan.Status != LoanStatus.Pending)
                 return false;
 

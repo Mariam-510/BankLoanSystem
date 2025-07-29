@@ -1,0 +1,12 @@
+2025-07-30 00:14:03.700 +03:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-07-30 00:14:03.740 +03:00 [INF]  Starting request POST /api/Auth/Login
+2025-07-30 00:14:05.998 +03:00 [INF]  Completed request POST /api/Auth/Login with status 200 in 2258ms
+2025-07-30 00:15:11.457 +03:00 [INF]  Starting request PUT /api/Loans/9
+2025-07-30 00:15:11.510 +03:00 [WRN] LuckyPennySoftware.MediatR.License You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-07-30 00:15:11.786 +03:00 [WRN]  Completed request PUT /api/Loans/9 with status 404 in 329ms
+2025-07-30 00:15:18.214 +03:00 [INF]  Starting request PUT /api/Loans/10
+2025-07-30 00:15:18.745 +03:00 [INF]  Completed request PUT /api/Loans/10 with status 200 in 530ms
+2025-07-30 00:15:26.795 +03:00 [INF]  Starting request DELETE /api/Loans/9
+2025-07-30 00:15:26.950 +03:00 [WRN]  Completed request DELETE /api/Loans/9 with status 404 in 154ms
+2025-07-30 00:15:30.570 +03:00 [INF]  Starting request DELETE /api/Loans/10
+2025-07-30 00:15:30.909 +03:00 [INF]  Completed request DELETE /api/Loans/10 with status 200 in 338ms

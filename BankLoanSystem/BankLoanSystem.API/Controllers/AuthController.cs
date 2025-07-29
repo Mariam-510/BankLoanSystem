@@ -21,13 +21,6 @@ namespace BankLoanSystem.API.Controllers
             _authService = authService;
         }
 
-        [HttpGet("TestAuth")]
-        [Authorize]
-        public async Task<IActionResult> TestAuth()
-        {
-            return Ok(ApiResponse<string>.SuccessResponse("Hello", "Authentication test successful"));
-        }
-
         [HttpPost("Register")]
         public async Task<IActionResult> Register([FromForm] CreateDto createDto)
         {
@@ -59,6 +52,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpPost("CreateAdmin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateAdmin([FromForm] CreateDto createDto)
         {
             if (!ModelState.IsValid)

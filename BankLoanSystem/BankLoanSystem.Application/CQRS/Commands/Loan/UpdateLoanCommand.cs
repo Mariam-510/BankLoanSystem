@@ -30,5 +30,8 @@ namespace BankLoanSystem.Application.CQRS.Commands.Loan
         [Required]
         [AllowedFileExtensions]
         public IFormFile SalarySlip { get; set; }
+
+        public string? CurrentUserId { get; set; }
+
     }
 }

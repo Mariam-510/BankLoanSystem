@@ -198,6 +198,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\af3029be-d093-4857-86af-9ada4214117c.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BankLoanSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BankLoanSystem.API</BasePath>
+      <RelativePath>NationalIds/b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>iecmk8d23b</Fingerprint>
+      <Integrity>SuzUuo+C26cfzbIxMFnTZlDV6ygoTtX+bWFkhahgRYk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NationalIds\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG'))">
       <SourceType>Package</SourceType>
       <SourceId>BankLoanSystem.API</SourceId>
@@ -341,6 +359,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BankLoanSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BankLoanSystem.API</BasePath>
+      <RelativePath>SalarySlips/9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x8ykchb646</Fingerprint>
+      <Integrity>YYougJy026IgvkiEuNN5RGZf+vR/14c+sMPoYRpL89k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SalarySlips\a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG'))">
       <SourceType>Package</SourceType>

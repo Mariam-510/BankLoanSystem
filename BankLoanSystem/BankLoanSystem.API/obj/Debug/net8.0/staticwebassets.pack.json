@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\NationalIds\\af3029be-d093-4857-86af-9ada4214117c.jpeg"
     },
     {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg",
+      "PackagePath": "staticwebassets\\NationalIds\\b14fd92a-282a-4897-8e19-46af373a4ee9.jpeg"
+    },
+    {
       "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG",
       "PackagePath": "staticwebassets\\NationalIds\\b61fe187-dcc0-47d1-884c-74d30b0db84c.JPG"
     },
@@ -75,6 +79,10 @@
     {
       "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG",
       "PackagePath": "staticwebassets\\SalarySlips\\7a8c0276-d1d6-4b53-ba35-b2dfa561de47.JPG"
+    },
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG",
+      "PackagePath": "staticwebassets\\SalarySlips\\9668034a-1ca9-4f72-a871-7aea0235e7f0.JPG"
     },
     {
       "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\a5b88ff1-8aa1-40f1-b21e-230fa1fe01a6.JPG",
