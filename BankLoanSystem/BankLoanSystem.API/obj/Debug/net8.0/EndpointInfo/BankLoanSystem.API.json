@@ -329,6 +329,18 @@
         }
       }
     },
+    "/api/Auth": {
+      "delete": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Loans": {
       "get": {
         "tags": [
@@ -461,10 +473,6 @@
                 ],
                 "type": "object",
                 "properties": {
-                  "Id": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "Amount": {
                     "type": "number",
                     "format": "double"
@@ -480,16 +488,10 @@
                   "SalarySlip": {
                     "type": "string",
                     "format": "binary"
-                  },
-                  "CurrentUserId": {
-                    "type": "string"
                   }
                 }
               },
               "encoding": {
-                "Id": {
-                  "style": "form"
-                },
                 "Amount": {
                   "style": "form"
                 },
@@ -500,9 +502,6 @@
                   "style": "form"
                 },
                 "SalarySlip": {
-                  "style": "form"
-                },
-                "CurrentUserId": {
                   "style": "form"
                 }
               }
@@ -592,17 +591,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLoanStatusCommand"
+                "$ref": "#/components/schemas/UpdateLoanStatusDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLoanStatusCommand"
+                "$ref": "#/components/schemas/UpdateLoanStatusDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLoanStatusCommand"
+                "$ref": "#/components/schemas/UpdateLoanStatusDto"
               }
             }
           }
@@ -696,17 +695,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLoanTypeCommand"
+                "$ref": "#/components/schemas/UpdateLoanTypeDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLoanTypeCommand"
+                "$ref": "#/components/schemas/UpdateLoanTypeDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLoanTypeCommand"
+                "$ref": "#/components/schemas/UpdateLoanTypeDto"
               }
             }
           }
@@ -791,15 +790,6 @@
         },
         "additionalProperties": false
       },
-      "LoanStatus": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
       "LoginDto": {
         "required": [
           "email",
@@ -845,31 +835,22 @@
         },
         "additionalProperties": false
       },
-      "UpdateLoanStatusCommand": {
+      "UpdateLoanStatusDto": {
         "type": "object",
         "properties": {
-          "loanId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "loanStatus": {
-            "$ref": "#/components/schemas/LoanStatus"
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "UpdateLoanTypeCommand": {
+      "UpdateLoanTypeDto": {
         "required": [
           "name"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "name": {
             "maxLength": 100,
             "minLength": 1,

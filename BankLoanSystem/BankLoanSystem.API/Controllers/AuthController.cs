@@ -6,7 +6,10 @@ using BankLoanSystem.Core.Models.DTOs.EmailDtos;
 using BankLoanSystem.Core.Models.DTOs.JWTDtos;
 using BankLoanSystem.Core.Models.ResponseModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using System.Transactions;
 
 namespace BankLoanSystem.API.Controllers
 {
@@ -133,5 +136,18 @@ namespace BankLoanSystem.API.Controllers
             var result = await _authService.ResetPasswordAsync(resetPasswordDto);
             return StatusCode(result.StatusCode, result);
         }
+
+        [HttpDelete]
+        [Authorize]
+        public async Task<IActionResult> Delete()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var result = await _authService.DeleteAccountAsync(userId);
+
+            return StatusCode(result.StatusCode, result);
+        }
+
+
     }
 }

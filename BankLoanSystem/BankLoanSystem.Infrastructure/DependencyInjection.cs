@@ -23,14 +23,17 @@ namespace BankLoanSystem.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
 
-            services.AddDbContext<LoanDbContext>(opt =>
+            services.AddDbContext<AuthDbContext>(opt =>
             opt.UseSqlServer(configuration.GetConnectionString("BankLoanConnection"))
             );
+
+            services.AddDbContext<LoanDbContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("BankLoanConnection")));
 
             services.AddIdentityCore<AppUser>()
                 .AddRoles<IdentityRole>()
                 .AddTokenProvider<DataProtectorTokenProvider<AppUser>>("Bank Loan System")
-                .AddEntityFrameworkStores<LoanDbContext>()
+                .AddEntityFrameworkStores<AuthDbContext>()
                 .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>

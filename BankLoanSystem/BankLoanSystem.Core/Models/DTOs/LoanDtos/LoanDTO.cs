@@ -1,6 +1,5 @@
 ﻿using BankLoanSystem.Core.Models.Attributes;
 using BankLoanSystem.Core.Models.Entities;
-using BankLoanSystem.Core.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,7 +18,7 @@ namespace BankLoanSystem.Core.Models.DTOs.LoanDtos
 
         public int Duration { get; set; }
 
-        public LoanStatus Status { get; set; }
+        public int Status { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

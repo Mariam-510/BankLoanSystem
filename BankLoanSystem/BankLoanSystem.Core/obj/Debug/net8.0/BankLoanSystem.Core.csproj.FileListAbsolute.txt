@@ -1,6 +1,8 @@
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\bin\Debug\net8.0\BankLoanSystem.Core.deps.json
+E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\bin\Debug\net8.0\BankLoanSystem.Core.runtimeconfig.json
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\bin\Debug\net8.0\BankLoanSystem.Core.dll
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\bin\Debug\net8.0\BankLoanSystem.Core.pdb
+E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.csproj.AssemblyReference.cache
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.AssemblyInfoInputs.cache
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.AssemblyInfo.cs
@@ -9,7 +11,5 @@ E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.dll
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\refint\BankLoanSystem.Core.dll
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.pdb
-E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\ref\BankLoanSystem.Core.dll
-E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.csproj.AssemblyReference.cache
-E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\bin\Debug\net8.0\BankLoanSystem.Core.runtimeconfig.json
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\BankLoanSystem.Core.genruntimeconfig.cache
+E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.Core\obj\Debug\net8.0\ref\BankLoanSystem.Core.dll

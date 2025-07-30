@@ -13,7 +13,7 @@ namespace BankLoanSystem.Application.CQRS.Commands.Loan
 {
     public class UpdateLoanCommand : IRequest<LoanDTO?>
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [NonNegative("Amount must be non-negative")]
@@ -31,7 +31,7 @@ namespace BankLoanSystem.Application.CQRS.Commands.Loan
         [AllowedFileExtensions]
         public IFormFile SalarySlip { get; set; }
 
-        public string? CurrentUserId { get; set; }
+        public string CurrentUserId { get; set; }
 
     }
 }

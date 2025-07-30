@@ -1,5 +1,4 @@
 ﻿using BankLoanSystem.Core.Models.DTOs.LoanDtos;
-using BankLoanSystem.Core.Models.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -11,8 +10,8 @@ namespace BankLoanSystem.Application.CQRS.Commands.Loan
 {
     public class UpdateLoanStatusCommand : IRequest<LoanDTO?>
     {
-        public int? LoanId { get; set; }
-        public LoanStatus LoanStatus { get; set; }
+        public int LoanId { get; set; }
+        public int LoanStatus { get; set; }
 
     }
 }

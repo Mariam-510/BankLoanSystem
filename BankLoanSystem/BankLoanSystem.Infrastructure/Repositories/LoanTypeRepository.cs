@@ -33,6 +33,13 @@ namespace BankLoanSystem.Infrastructure.Repositories
                 .FirstOrDefaultAsync(lt => lt.Id == id);
         }
 
+        public async Task<LoanType?> GetByNameAsync(string name)
+        {
+            return await _dbContext.LoanTypes
+                .FirstOrDefaultAsync(lt => lt.Name.ToLower() == name.ToLower() && !lt.IsDeleted);
+        }
+
+
         public async Task<LoanType> CreateAsync(LoanType loanType)
         {
             await _dbContext.LoanTypes.AddAsync(loanType);

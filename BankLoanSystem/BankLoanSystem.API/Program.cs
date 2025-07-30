@@ -8,14 +8,17 @@ using BankLoanSystem.API.Middlewares;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Text.Json;
 using System.Reflection;
-using BankLoanSystem.Application.CQRS.Handlers.LoanType;
 using Microsoft.AspNetCore.Mvc;
 using BankLoanSystem.Core.Models.ResponseModels;
+using BankLoanSystem.Application.CQRS.Handlers.LoanType;
+using Microsoft.Data.SqlClient;
+using System.Configuration;
 
 namespace BankLoanSystem.API
 {
     public class Program
     {
+
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -76,10 +79,10 @@ namespace BankLoanSystem.API
 
 
             //Serilog
-            Log.Logger = new LoggerConfiguration()
+             Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(builder.Configuration)
             .CreateLogger();
-
+           
 
             builder.Host.UseSerilog();
 
@@ -139,6 +142,6 @@ namespace BankLoanSystem.API
             app.MapControllers();
 
             app.Run();
-        }
+        }   
     }
 }

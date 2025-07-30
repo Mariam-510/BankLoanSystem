@@ -1,6 +1,5 @@
 ﻿using BankLoanSystem.Application.CQRS.Commands.Loan;
 using BankLoanSystem.Core.Interfaces.Repositories;
-using BankLoanSystem.Core.Models.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -31,7 +30,7 @@ namespace BankLoanSystem.Application.CQRS.Handlers.Loan
                 return false;
             }
 
-            if (loan.Status != LoanStatus.Pending)
+            if (loan.Status != 0)
                 return false;
 
             var result = await _loanRepository.DeleteAsync(request.Id);

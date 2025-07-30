@@ -1,50 +1,45 @@
-﻿using BankLoanSystem.Core.Models.Attributes;
-using BankLoanSystem.Core.Models.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BankLoanSystem.Core.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace BankLoanSystem.Core.Models.Entities
+namespace BankLoanSystem.Infrastructure;
+
+public partial class Loan
 {
-    public class Loan
-    {
-        [Required]
-        public int Id { get; set; }
+    [Key]
+    public int Id { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        [NonNegative("Amount must be non-negative")]
-        public decimal Amount { get; set; }
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal Amount { get; set; }
 
-        [Required]
-        [NonNegative("Duration must be non-negative")]
-        public int Duration { get; set; }
+    public int Duration { get; set; }
 
-        public LoanStatus Status { get; set; } = LoanStatus.Pending;
+    public int Status { get; set; }
 
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; }
 
-        public bool IsDeleted { get; set; } = false;
-       
-        [Required]
-        public string NationalIdPath { get; set; } = string.Empty;
+    public bool IsDeleted { get; set; }
 
-        [Required]
-        public string SalarySlipPath { get; set; } = string.Empty;
+    [StringLength(255)]
+    public string NationalIdPath { get; set; } = null!;
 
-        [ForeignKey("AppUser")]
-        [Required]
-        public string AppUserId { get; set; }
-        public AppUser? AppUser { get; set; }
+    [StringLength(255)]
+    public string SalarySlipPath { get; set; } = null!;
 
-        [Required]
-        [ForeignKey("LoanType")]
-        public int LoanTypeId { get; set; }
-        public LoanType? LoanType { get; set; }
-    }
+    public string AppUserId { get; set; } = null!;
 
+    public int LoanTypeId { get; set; }
+
+    public DateTime? UpdatedAt { get; set; }
+
+    [ForeignKey("AppUserId")]
+    [InverseProperty("Loans")]
+    public virtual AppUser? AppUser { get; set; } = null!; 
+
+    [ForeignKey("LoanTypeId")]
+    [InverseProperty("Loans")]
+    public virtual LoanType? LoanType { get; set; } = null!;
 }

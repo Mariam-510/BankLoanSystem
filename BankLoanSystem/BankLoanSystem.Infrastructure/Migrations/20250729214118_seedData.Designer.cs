@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BankLoanSystem.Infrastructure.Migrations
 {
-    [DbContext(typeof(LoanDbContext))]
-    [Migration("20250728105739_addappuser")]
-    partial class addappuser
+    [DbContext(typeof(AuthDbContext))]
+    [Migration("20250729214118_seedData")]
+    partial class seedData
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,9 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("CodeGeneratedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -43,6 +46,9 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("EmailConfirmationCode")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
@@ -76,11 +82,17 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PasswordResetCode")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ResetCodeGeneratedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
@@ -103,74 +115,27 @@ namespace BankLoanSystem.Infrastructure.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
 
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Loan", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("AppUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Duration")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("LoanTypeId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NationalIdPath")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SalarySlipPath")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
-
-                    b.HasIndex("LoanTypeId");
-
-                    b.ToTable("Loans");
-                });
-
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.LoanType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("LoanTypes");
+                    b.HasData(
+                        new
+                        {
+                            Id = "779af355-c7c9-4935-ad2f-85c324825ff2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "223d0eed-1b02-44c7-9bae-baae3508f127",
+                            CreatedAt = new DateTime(2025, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "admin1@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "",
+                            IsDeleted = false,
+                            LockoutEnabled = true,
+                            NormalizedEmail = "ADMIN1@GMAIL.COM",
+                            NormalizedUserName = "ADMIN1@GMAIL.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG7/LUrcXKZaK3krqZoKCu3SYiqlupsTeHA4lnjWi0QONNvF0hF5zBNXYhZKBOwh/Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "31012730-e125-4ecb-8811-38744d3a6160",
+                            TwoFactorEnabled = false,
+                            UserName = "admin1@gmail.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -198,6 +163,22 @@ namespace BankLoanSystem.Infrastructure.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "266c6ce3-1f56-4601-9d45-5d9b87b01b30",
+                            ConcurrencyStamp = "266c6ce3-1f56-4601-9d45-5d9b87b01b30",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "cdb95803-0507-4a46-9c14-0c3b3055c9be",
+                            ConcurrencyStamp = "cdb95803-0507-4a46-9c14-0c3b3055c9be",
+                            Name = "Client",
+                            NormalizedName = "CLIENT"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -285,6 +266,13 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "779af355-c7c9-4935-ad2f-85c324825ff2",
+                            RoleId = "266c6ce3-1f56-4601-9d45-5d9b87b01b30"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -304,25 +292,6 @@ namespace BankLoanSystem.Infrastructure.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.Loan", b =>
-                {
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.AppUser", "AppUser")
-                        .WithMany("Loans")
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BankLoanSystem.Core.Models.Entities.LoanType", "LoanType")
-                        .WithMany("Loans")
-                        .HasForeignKey("LoanTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AppUser");
-
-                    b.Navigation("LoanType");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -374,16 +343,6 @@ namespace BankLoanSystem.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.AppUser", b =>
-                {
-                    b.Navigation("Loans");
-                });
-
-            modelBuilder.Entity("BankLoanSystem.Core.Models.Entities.LoanType", b =>
-                {
-                    b.Navigation("Loans");
                 });
 #pragma warning restore 612, 618
         }

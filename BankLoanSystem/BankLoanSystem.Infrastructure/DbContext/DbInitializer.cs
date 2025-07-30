@@ -45,6 +45,7 @@ namespace BankLoanSystem.Infrastructure.DbContext
                 new AppUser
                 {
                     Id = appUserId,
+                    FirstName = "Admin",
                     UserName = "admin1@gmail.com",
                     NormalizedUserName = "ADMIN1@GMAIL.COM",
                     Email = "admin1@gmail.com",

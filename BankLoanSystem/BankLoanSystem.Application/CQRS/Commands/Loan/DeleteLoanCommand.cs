@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace BankLoanSystem.Application.CQRS.Commands.Loan
 {
-    public record DeleteLoanCommand(int Id, string? CurrentUserId) : IRequest<bool>;
+    public record DeleteLoanCommand(int Id, string CurrentUserId) : IRequest<bool>;
 
 }

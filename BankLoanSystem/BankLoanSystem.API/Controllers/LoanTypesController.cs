@@ -1,6 +1,8 @@
-﻿using BankLoanSystem.Application.CQRS.Commands.LoanType;
+﻿using AutoMapper;
+using BankLoanSystem.Application.CQRS.Commands.LoanType;
 using BankLoanSystem.Application.CQRS.Queries;
 using BankLoanSystem.Application.CQRS.Queries.LoanType;
+using BankLoanSystem.Core.Models.DTOs.LoanDtos;
 using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
 using BankLoanSystem.Core.Models.ResponseModels;
 using MediatR;
@@ -16,10 +18,12 @@ namespace BankLoanSystem.API.Controllers
     public class LoanTypesController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IMapper _mapper;
 
-        public LoanTypesController(IMediator mediator)
+        public LoanTypesController(IMediator mediator, IMapper mapper)
         {
             _mediator = mediator;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -48,15 +52,31 @@ namespace BankLoanSystem.API.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] CreateLoanTypeCommand command)
         {
-            var result = await _mediator.Send(command);
-            var response = ApiResponse<LoanTypeDto>.SuccessResponse(result, "Loan Type created successfully", 201);
-            return CreatedAtAction(nameof(GetById), new { result.Id }, response);
+            try
+            {
+                var result = await _mediator.Send(command);
+                if (result == null)
+                {
+                    return BadRequest(ApiResponse<object>.ErrorResponse("Loan type already exists.", 400));
+                }
+
+                var response = ApiResponse<LoanTypeDto>.SuccessResponse(result, "Loan Type created successfully", 201);
+                return CreatedAtAction(nameof(GetById), new { id = result.Id }, response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ApiResponse<object>.ErrorResponse("An error occurred while creating loan type.", 500, new List<string> { ex.Message }));
+            }
         }
+
 
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Update(int id, [FromBody] UpdateLoanTypeCommand command)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateLoanTypeDto updateLoanTypeDto)
         {
+
+            UpdateLoanTypeCommand command = _mapper.Map<UpdateLoanTypeCommand>(updateLoanTypeDto);
+
             command.Id = id;
 
             var result = await _mediator.Send(command);

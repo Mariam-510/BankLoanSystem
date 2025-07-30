@@ -24,13 +24,21 @@ namespace BankLoanSystem.Application.CQRS.Handlers.LoanType
         }
         public async Task<LoanTypeDto> Handle(CreateLoanTypeCommand request, CancellationToken cancellationToken)
         {
-            var loanType = _mapper.Map<Core.Models.Entities.LoanType>(request);
+            // Check if name already exists
+            var existingLoanType = await _repository.GetByNameAsync(request.Name);
+            if (existingLoanType != null)
+            {
+                throw new InvalidOperationException("A loan type with the same name already exists.");
+            }
+
+            var loanType = _mapper.Map<BankLoanSystem.Infrastructure.LoanType>(request);
 
             var created = await _repository.CreateAsync(loanType);
 
-            var loanTypeDto = _mapper.Map<LoanTypeDto>(loanType);
+            var loanTypeDto = _mapper.Map<LoanTypeDto>(created);
 
             return loanTypeDto;
         }
+
     }
 }

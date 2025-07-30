@@ -30,7 +30,7 @@ namespace BankLoanSystem.Application.Services
                 new Claim(JwtRegisteredClaimNames.Sub, appUser.Id),
                 new Claim(JwtRegisteredClaimNames.Email, appUser.Email),
                 new Claim("FirstName", appUser.FirstName),
-                new Claim("LastName", appUser.LastName),
+                new Claim("LastName", appUser.LastName ?? ""),
             };
 
             foreach (var role in roles)

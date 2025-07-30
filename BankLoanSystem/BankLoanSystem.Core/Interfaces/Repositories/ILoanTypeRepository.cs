@@ -1,4 +1,5 @@
 ﻿using BankLoanSystem.Core.Models.Entities;
+using BankLoanSystem.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace BankLoanSystem.Core.Interfaces.Repositories
     {
         Task<List<LoanType>> GetAllAsync();
         Task<LoanType?> GetByIdAsync(int id);
+        Task<LoanType?> GetByNameAsync(string name);
         Task<LoanType> CreateAsync(LoanType loanType);
         Task<LoanType?> UpdateAsync(int id, LoanType loanType);
         Task<LoanType?> DeleteAsync(int id);
