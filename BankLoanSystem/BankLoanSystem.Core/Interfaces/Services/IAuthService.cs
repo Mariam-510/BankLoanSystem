@@ -18,5 +18,7 @@ namespace BankLoanSystem.Core.Interfaces.Services
         Task<ApiResponse<object>> ForgotPasswordAsync(EmailFormDto emailFormDto);
         Task<ApiResponse<object>> ValidateResetCodeAsync(ValidateResetCodeDto validateResetCodeDto);
         Task<ApiResponse<object>> ResetPasswordAsync(ResetPasswordDto resetPasswordDto);
+        Task<ApiResponse<object>> DeleteAccountAsync(string userId);
+
     }
 }

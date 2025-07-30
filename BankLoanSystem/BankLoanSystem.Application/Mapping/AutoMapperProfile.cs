@@ -4,8 +4,8 @@ using BankLoanSystem.Core.Models.DTOs.LoanTypeDtos;
 using BankLoanSystem.Core.Models.DTOs.AppUserDtos;
 using BankLoanSystem.Application.CQRS.Commands.LoanType;
 using BankLoanSystem.Core.Models.DTOs.LoanDtos;
-using BankLoanSystem.Core.Models.Enums;
 using BankLoanSystem.Application.CQRS.Commands.Loan;
+using BankLoanSystem.Infrastructure;
 
 
 namespace BankLoanSystem.Application.Mapping
@@ -27,9 +27,11 @@ namespace BankLoanSystem.Application.Mapping
 
             CreateMap<CreateLoanTypeCommand, LoanType>().ReverseMap();
 
+            CreateMap<UpdateLoanTypeDto, UpdateLoanTypeCommand>();
+
             //-----------------------------------------------------------------------------------
             CreateMap<CreateLoanCommand, Loan>()
-                 .ForMember(dest => dest.Status, opt => opt.MapFrom(_ => LoanStatus.Pending))
+                 .ForMember(dest => dest.Status, opt => opt.MapFrom(_ => 0))
                  .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow))
                  .ForMember(dest => dest.IsDeleted, opt => opt.MapFrom(_ => false));
 
@@ -37,6 +39,12 @@ namespace BankLoanSystem.Application.Mapping
                 .ForMember(dest => dest.AppUserFirstName, opt => opt.MapFrom(src => src.AppUser != null ? src.AppUser.FirstName : null))
                 .ForMember(dest => dest.AppUserLastName, opt => opt.MapFrom(src => src.AppUser != null ? src.AppUser.LastName : null))
                 .ForMember(dest => dest.LoanTypeName, opt => opt.MapFrom(src => src.LoanType != null ? src.LoanType.Name : null));
+
+
+            CreateMap<UpdateLoanStatusDto, UpdateLoanStatusCommand>();
+
+            CreateMap<UpdateLoanDto, UpdateLoanCommand>();
+            
         }
 
     }

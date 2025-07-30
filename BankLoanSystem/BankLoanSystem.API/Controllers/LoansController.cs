@@ -1,5 +1,8 @@
-﻿using BankLoanSystem.Application.CQRS.Commands.Loan;
+﻿using AutoMapper;
+using BankLoanSystem.Application.CQRS.Commands.Loan;
+using BankLoanSystem.Application.CQRS.Commands.LoanType;
 using BankLoanSystem.Application.CQRS.Queries.Loan;
+using BankLoanSystem.Application.Exceptions;
 using BankLoanSystem.Core.Models.DTOs.LoanDtos;
 using BankLoanSystem.Core.Models.ResponseModels;
 using MediatR;
@@ -17,10 +20,12 @@ namespace BankLoanSystem.API.Controllers
     {
 
         private readonly IMediator _mediator;
+        private readonly IMapper _mapper;
 
-        public LoansController(IMediator mediator)
+        public LoansController(IMediator mediator, IMapper mapper)
         {
             _mediator = mediator;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -90,30 +95,44 @@ namespace BankLoanSystem.API.Controllers
         [Authorize(Roles = "Client")]
         public async Task<IActionResult> Create([FromForm] CreateLoanCommand command)
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (string.IsNullOrEmpty(userId))
+            try
             {
-                return Unauthorized(ApiResponse<object>.ErrorResponse("User authentication failed", 401));
+                // ✅ Extract authenticated user ID
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Unauthorized(ApiResponse<object>.ErrorResponse("User authentication failed", 401));
+                }
+
+                command.AppUserId = userId;
+
+                var result = await _mediator.Send(command);
+
+                var response = ApiResponse<LoanDTO>.SuccessResponse(result, "Loan created successfully", 201);
+
+                return CreatedAtAction(nameof(GetById), new { id = result.Id }, response);
             }
-
-            command.AppUserId = userId;
-
-            var result = await _mediator.Send(command);
-
-            var response = ApiResponse<LoanDTO>.SuccessResponse(result, "Loan created successfully", 201);
-
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, response);
+            catch (NotFoundException ex)
+            {
+                return NotFound(ApiResponse<object>.ErrorResponse(ex.Message, 404));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ApiResponse<object>.ErrorResponse("An unexpected error occurred.", 500, new List<string> { ex.Message }));
+            }
         }
 
         [HttpPut("{id}")]
         [Authorize(Roles = "Client")]
-        public async Task<IActionResult> Update(int id, [FromForm] UpdateLoanCommand command)
+        public async Task<IActionResult> Update(int id, [FromForm] UpdateLoanDto updateLoanDto)
         {
             var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(currentUserId))
             {
                 return Unauthorized(ApiResponse<object>.ErrorResponse("User authentication failed", 401));
             }
+
+            UpdateLoanCommand command = _mapper.Map<UpdateLoanCommand>(updateLoanDto);
 
             command.Id = id;
             command.CurrentUserId = currentUserId;
@@ -132,8 +151,9 @@ namespace BankLoanSystem.API.Controllers
 
         [HttpPatch("{id}/status")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateLoanStatusCommand command)
+        public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateLoanStatusDto updateLoanStatusDto)
         {
+            UpdateLoanStatusCommand command = _mapper.Map<UpdateLoanStatusCommand>(updateLoanStatusDto);
             command.LoanId = id;
 
             var result = await _mediator.Send(command);

@@ -4,7 +4,6 @@ using BankLoanSystem.Core.Interfaces.Repositories;
 using BankLoanSystem.Core.Interfaces.Services;
 using BankLoanSystem.Core.Models.DTOs.LoanDtos;
 using BankLoanSystem.Core.Models.Entities;
-using BankLoanSystem.Core.Models.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -37,7 +36,7 @@ namespace BankLoanSystem.Application.CQRS.Handlers.Loan
                 return null;
             }
 
-            if (existingLoan.Status != LoanStatus.Pending)
+            if (existingLoan.Status != 0)
                 return null;
 
             existingLoan.Duration = request.Duration;

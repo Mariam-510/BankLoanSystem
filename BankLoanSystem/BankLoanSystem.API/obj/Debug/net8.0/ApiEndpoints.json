@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "BankLoanSystem.API.Controllers.AuthController",
+    "Method": "Delete",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankLoanSystem.API.Controllers.AuthController",
     "Method": "ConfirmEmailCode",
     "RelativePath": "api/Auth/ConfirmEmailCode",
     "HttpMethod": "POST",
@@ -248,11 +258,6 @@
         "IsRequired": true
       },
       {
-        "Name": "Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
         "Name": "Amount",
         "Type": "System.Decimal",
         "IsRequired": false
@@ -270,11 +275,6 @@
       {
         "Name": "SalarySlip",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "CurrentUserId",
-        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -310,8 +310,8 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
-        "Type": "BankLoanSystem.Application.CQRS.Commands.Loan.UpdateLoanStatusCommand",
+        "Name": "updateLoanStatusDto",
+        "Type": "BankLoanSystem.Core.Models.DTOs.LoanDtos.UpdateLoanStatusDto",
         "IsRequired": true
       }
     ],
@@ -399,8 +399,8 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
-        "Type": "BankLoanSystem.Application.CQRS.Commands.LoanType.UpdateLoanTypeCommand",
+        "Name": "updateLoanTypeDto",
+        "Type": "BankLoanSystem.Core.Models.DTOs.LoanTypeDtos.UpdateLoanTypeDto",
         "IsRequired": true
       }
     ],

@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BankLoanSystem.Application.CQRS.Commands.LoanType
 {
-    public record UpdateLoanTypeCommand : IRequest<LoanTypeDto?>
+    public class UpdateLoanTypeCommand : IRequest<LoanTypeDto?>
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(100)]

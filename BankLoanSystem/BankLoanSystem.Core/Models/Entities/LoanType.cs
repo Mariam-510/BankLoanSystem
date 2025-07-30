@@ -1,23 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
-namespace BankLoanSystem.Core.Models.Entities
+namespace BankLoanSystem.Infrastructure;
+
+public partial class LoanType
 {
-    public class LoanType
-    {
-        [Key]
-        public int Id { get; set; }
+    [Key]
+    public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100)]
-        public string Name { get; set; }
+    [StringLength(100)]
+    public string Name { get; set; } = null!;
 
-        public bool IsDeleted { get; set; } = false;
+    public bool IsDeleted { get; set; }
 
-        public ICollection<Loan>? Loans { get; set; }
-    }
+    public DateTime CreatedAt { get; set; }
+
+    public DateTime? UpdatedAt { get; set; }
+
+    [InverseProperty("LoanType")]
+    public virtual ICollection<Loan> Loans { get; set; } = new List<Loan>();
 }
