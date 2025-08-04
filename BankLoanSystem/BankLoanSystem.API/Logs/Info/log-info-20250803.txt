@@ -1,0 +1,7 @@
+2025-08-03 09:43:30.584 +03:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-03 09:43:30.633 +03:00 [INF]  Starting request GET /favicon.ico
+2025-08-03 09:43:31.676 +03:00 [WRN]  Completed request GET /favicon.ico with status 404 in 1042ms
+2025-08-03 13:20:18.333 +03:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-03 13:20:18.405 +03:00 [INF]  Starting request POST /api/Auth/Login
+2025-08-03 13:20:22.515 +03:00 [INF] BankLoanSystem.Application.Services.AuthService Successful login for user: mariam@example.com
+2025-08-03 13:20:22.528 +03:00 [INF]  Completed request POST /api/Auth/Login with status 200 in 4124ms

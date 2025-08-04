@@ -132,7 +132,7 @@ namespace BankLoanSystem.Application.Services
                 _logger.LogWarning("Login attempt with non-existent or deleted email: {Email}", loginDto.Email);
                 return ApiResponse<object>.ErrorResponse(
                     "UserName or Password Incorrect",
-                    401);
+                    400);
             }
 
             var isEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
@@ -159,7 +159,7 @@ namespace BankLoanSystem.Application.Services
             _logger.LogWarning("Failed login attempt for user: {Email}", loginDto.Email);
             return ApiResponse<object>.ErrorResponse(
                 "UserName or Password Incorrect",
-                401);
+                400);
         }
 
         public async Task<ApiResponse<object>> CreateAdminAsync(CreateDto createDto)

@@ -1,0 +1,36 @@
+<!-- loan-type-edit.component.html -->
+<div class="container mt-4">
+  <h2 class="mb-4">Edit Loan Type</h2>
+
+  <div class="card mb-4">
+    <div class="card-header">
+      <h4>Edit Loan Type</h4>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="loanTypeForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Loan Type Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name">
+          <div *ngIf="loanTypeForm.get('name')?.invalid && loanTypeForm.get('name')?.touched" class="text-danger">
+            Valid name is required (max 100 characters)
+          </div>
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger">
+          {{ errorMessage }}
+        </div>
+
+        <div *ngIf="successMessage" class="alert alert-success">
+          {{ successMessage }}
+        </div>
+
+        <button type="submit" class="btn btn-primary me-2" [disabled]="loanTypeForm.invalid">
+          Update
+        </button>
+        <button type="button" class="btn btn-secondary" routerLink="/loan-types">
+          Cancel
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

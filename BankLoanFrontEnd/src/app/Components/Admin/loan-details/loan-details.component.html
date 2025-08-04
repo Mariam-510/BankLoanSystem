@@ -1,0 +1,101 @@
+<!-- loan-details.component.html -->
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Loan Application Details</h2>
+    <button class="btn btn-sm btn-outline-secondary" (click)="goBack()">
+      <i class="fas fa-arrow-left"></i> Back to Dashboard
+    </button>
+  </div>
+
+  <!-- Loading Indicator -->
+  <div *ngIf="isLoading" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-2">Loading loan details...</p>
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Success Message -->
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+
+  <!-- Loan Details Card -->
+  <div *ngIf="loan && !isLoading" class="card">
+    <div class="card-header">
+      <h4>Application #{{ loan.id }}</h4>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Applicant Information</h5>
+          <div class="mb-3">
+            <strong>Name: </strong> {{ loan.appUserFirstName }} {{ loan.appUserLastName || '' }}
+          </div>
+          <div class="mb-3">
+            <strong>Status: </strong>
+            <span class="badge" [ngClass]="{
+              'bg-warning': loan.status === 0,
+              'bg-success': loan.status === 1,
+              'bg-danger': loan.status === 2
+            }">
+              {{ getStatusText(loan.status) }}
+            </span>
+          </div>
+          <div class="col-md-6">
+            <h5>Documents</h5>
+            <div class="mb-3">
+              <strong>National ID:</strong>
+              <a [href]="getDocumentUrl(loan.nationalIdPath)" target="_blank" class="ms-2">
+                View Document
+              </a>
+            </div>
+            <div class="mb-3">
+              <strong>Salary Slip:</strong>
+              <a [href]="getDocumentUrl(loan.salarySlipPath)" target="_blank" class="ms-2">
+                View Document
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h5>Loan Details</h5>
+          <div class="mb-3">
+            <strong>Amount: </strong> {{ loan.amount | currency:'EGP ' }}
+          </div>
+          <div class="mb-3">
+            <strong>Duration: </strong> {{ loan.duration }} months
+          </div>
+          <div class="mb-3">
+            <strong>Type: </strong> {{ loan.loanTypeName || 'N/A' }}
+          </div>
+          <div class="mb-3">
+            <strong>Applied On: </strong> {{ loan.createdAt | date:'medium' }}
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="btn-group">
+          <button *ngIf="loan.status !== 0" class="btn btn-warning me-2" (click)="updateLoanStatus(0)"
+            [disabled]="isLoading">
+            <i class="fas fa-check"></i> Under Review
+          </button>
+          <button *ngIf="loan.status !== 1" class="btn btn-success me-2" (click)="updateLoanStatus(1)"
+            [disabled]="isLoading">
+            <i class="fas fa-check"></i> Approve
+          </button>
+          <button *ngIf="loan.status !== 2" class="btn btn-danger" (click)="updateLoanStatus(2)" [disabled]="isLoading">
+            <i class="fas fa-times"></i> Reject
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

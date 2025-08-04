@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\controllers\\loantypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\controllers\\loantypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\cqrs\\commands\\loantype\\createloantypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\cqrs\\commands\\loantype\\createloantypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\cqrs\\handlers\\loantype\\createloantypehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\cqrs\\handlers\\loantype\\createloantypehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -11,84 +31,24 @@
       "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\middlewares\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\middlewares\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\interfaces\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\interfaces\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D899C2E4-E4B7-47BA-AC8A-B91ED80B0F68}|BankLoanSystem.Infrastructure\\BankLoanSystem.Infrastructure.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.infrastructure\\dbcontext\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D899C2E4-E4B7-47BA-AC8A-B91ED80B0F68}|BankLoanSystem.Infrastructure\\BankLoanSystem.Infrastructure.csproj|solutionrelative:bankloansystem.infrastructure\\dbcontext\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D899C2E4-E4B7-47BA-AC8A-B91ED80B0F68}|BankLoanSystem.Infrastructure\\BankLoanSystem.Infrastructure.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.infrastructure\\dbcontext\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D899C2E4-E4B7-47BA-AC8A-B91ED80B0F68}|BankLoanSystem.Infrastructure\\BankLoanSystem.Infrastructure.csproj|solutionrelative:bankloansystem.infrastructure\\dbcontext\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\cqrs\\commands\\loan\\createloancommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|solutionrelative:bankloansystem.application\\cqrs\\commands\\loan\\createloancommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\dtos\\loantypedtos\\loantypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\dtos\\loantypedtos\\loantypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\attributes\\allowedfileextensionsattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\attributes\\allowedfileextensionsattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\attributes\\nonnegativeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\attributes\\nonnegativeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\attributes\\passwordlengthvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\attributes\\passwordlengthvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\entities\\loantype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\entities\\loantype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\models\\dtos\\appuserdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\models\\dtos\\appuserdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\bankloansystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\bankloansystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.core\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2B42DA8-0403-4524-B26D-6088B106574F}|BankLoanSystem.Core\\BankLoanSystem.Core.csproj|solutionrelative:bankloansystem.core\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.api\\controllers\\loantypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF56E371-05D7-453F-B22C-631FFB7E8F83}|BankLoanSystem.API\\BankLoanSystem.API.csproj|solutionrelative:bankloansystem.api\\controllers\\loantypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A0E9716-0EC0-4D1B-BE64-3D2AF79A5015}|BankLoanSystem.Application\\BankLoanSystem.Application.csproj|e:\\bank misr\\solo project\\bankloansystem\\bankloansystem\\bankloansystem.application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 269,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\appsettings.json",
               "RelativeDocumentMoniker": "BankLoanSystem.API\\appsettings.json",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\appsettings.json",
               "RelativeToolTip": "BankLoanSystem.API\\appsettings.json",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-30T07:20:56.675Z",
               "IsPinned": true,
@@ -120,47 +80,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Program.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.API\\Program.cs",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Program.cs",
               "RelativeToolTip": "BankLoanSystem.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T06:11:51.52Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 4,
               "Title": "LoansController.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\LoansController.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.API\\Controllers\\LoansController.cs",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\LoansController.cs",
               "RelativeToolTip": "BankLoanSystem.API\\Controllers\\LoansController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAYwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T07:22:46.197Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
               "Title": "LoanTypesController.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\LoanTypesController.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.API\\Controllers\\LoanTypesController.cs",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\LoanTypesController.cs",
               "RelativeToolTip": "BankLoanSystem.API\\Controllers\\LoanTypesController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAowBYAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T07:41:49.977Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 12,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Mapping\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.Application\\Mapping\\AutoMapperProfile.cs",
@@ -173,20 +134,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.API\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "BankLoanSystem.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAA1wF8AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T08:25:11.858Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 11,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Interfaces\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.Core\\Interfaces\\Services\\IAuthService.cs",
@@ -199,16 +161,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "BankLoanSystem.Application\\Services\\AuthService.cs",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\AuthService.cs",
               "RelativeToolTip": "BankLoanSystem.Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAYwDAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAqwIIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T08:29:08.394Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JWTService.cs",
+              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\JWTService.cs",
+              "RelativeDocumentMoniker": "BankLoanSystem.Application\\Services\\JWTService.cs",
+              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\JWTService.cs",
+              "RelativeToolTip": "BankLoanSystem.Application\\Services\\JWTService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwBkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:29:20.938Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateLoanTypeCommand.cs",
+              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\CQRS\\Commands\\LoanType\\CreateLoanTypeCommand.cs",
+              "RelativeDocumentMoniker": "BankLoanSystem.Application\\CQRS\\Commands\\LoanType\\CreateLoanTypeCommand.cs",
+              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\CQRS\\Commands\\LoanType\\CreateLoanTypeCommand.cs",
+              "RelativeToolTip": "BankLoanSystem.Application\\CQRS\\Commands\\LoanType\\CreateLoanTypeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T23:54:44.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateLoanTypeHandler.cs",
+              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\CQRS\\Handlers\\LoanType\\CreateLoanTypeHandler.cs",
+              "RelativeDocumentMoniker": "BankLoanSystem.Application\\CQRS\\Handlers\\LoanType\\CreateLoanTypeHandler.cs",
+              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\CQRS\\Handlers\\LoanType\\CreateLoanTypeHandler.cs",
+              "RelativeToolTip": "BankLoanSystem.Application\\CQRS\\Handlers\\LoanType\\CreateLoanTypeHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T23:54:38.207Z",
               "EditorCaption": ""
             },
             {
@@ -217,197 +219,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoggingMiddleware.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Middlewares\\LoggingMiddleware.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.API\\Middlewares\\LoggingMiddleware.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Middlewares\\LoggingMiddleware.cs",
-              "RelativeToolTip": "BankLoanSystem.API\\Middlewares\\LoggingMiddleware.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:54:43.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\FileService.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Application\\Services\\FileService.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\FileService.cs",
-              "RelativeToolTip": "BankLoanSystem.Application\\Services\\FileService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBQAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:50:30.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JWTService.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\JWTService.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Application\\Services\\JWTService.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\JWTService.cs",
-              "RelativeToolTip": "BankLoanSystem.Application\\Services\\JWTService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:50:27.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Application\\Services\\EmailService.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\Services\\EmailService.cs",
-              "RelativeToolTip": "BankLoanSystem.Application\\Services\\EmailService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:44:23.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Interfaces\\Services\\IEmailService.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Interfaces\\Services\\IEmailService.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Interfaces\\Services\\IEmailService.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Interfaces\\Services\\IEmailService.cs",
+              "DocumentIndex": 10,
+              "Title": "BankLoanSystem.API.csproj",
+              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\BankLoanSystem.API.csproj",
+              "RelativeDocumentMoniker": "BankLoanSystem.API\\BankLoanSystem.API.csproj",
+              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\BankLoanSystem.API.csproj",
+              "RelativeToolTip": "BankLoanSystem.API\\BankLoanSystem.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:44:12.97Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-03T09:54:44.339Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AuthDbContext.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Infrastructure\\DbContext\\AuthDbContext.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Infrastructure\\DbContext\\AuthDbContext.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Infrastructure\\DbContext\\AuthDbContext.cs",
-              "RelativeToolTip": "BankLoanSystem.Infrastructure\\DbContext\\AuthDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\DTOs\\AppUserDtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\DTOs\\AppUserDtos\\LoginDto.cs",
+              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\DTOs\\AppUserDtos\\LoginDto.cs",
+              "RelativeToolTip": "BankLoanSystem.Core\\Models\\DTOs\\AppUserDtos\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:43:22.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Infrastructure\\DbContext\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Infrastructure\\DbContext\\DbInitializer.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Infrastructure\\DbContext\\DbInitializer.cs",
-              "RelativeToolTip": "BankLoanSystem.Infrastructure\\DbContext\\DbInitializer.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:43:13.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateLoanCommand.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\CQRS\\Commands\\Loan\\CreateLoanCommand.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Application\\CQRS\\Commands\\Loan\\CreateLoanCommand.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Application\\CQRS\\Commands\\Loan\\CreateLoanCommand.cs",
-              "RelativeToolTip": "BankLoanSystem.Application\\CQRS\\Commands\\Loan\\CreateLoanCommand.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:40:51.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoanTypeDto.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\DTOs\\LoanTypeDtos\\LoanTypeDto.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\DTOs\\LoanTypeDtos\\LoanTypeDto.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\DTOs\\LoanTypeDtos\\LoanTypeDto.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\DTOs\\LoanTypeDtos\\LoanTypeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:40:43.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AllowedFileExtensionsAttribute.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Attributes\\AllowedFileExtensionsAttribute.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\Attributes\\AllowedFileExtensionsAttribute.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Attributes\\AllowedFileExtensionsAttribute.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\Attributes\\AllowedFileExtensionsAttribute.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:40:30.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PasswordLengthValidator.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Attributes\\PasswordLengthValidator.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\Attributes\\PasswordLengthValidator.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Attributes\\PasswordLengthValidator.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\Attributes\\PasswordLengthValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:40:12.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NonNegativeAttribute.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Attributes\\NonNegativeAttribute.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\Attributes\\NonNegativeAttribute.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Attributes\\NonNegativeAttribute.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\Attributes\\NonNegativeAttribute.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:39:58.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\Entities\\AppUser.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Entities\\AppUser.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\Entities\\AppUser.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:37:57.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoanType.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Entities\\LoanType.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\Entities\\LoanType.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Entities\\LoanType.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\Entities\\LoanType.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:37:36.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Loan.cs",
-              "DocumentMoniker": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Entities\\Loan.cs",
-              "RelativeDocumentMoniker": "BankLoanSystem.Core\\Models\\Entities\\Loan.cs",
-              "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.Core\\Models\\Entities\\Loan.cs",
-              "RelativeToolTip": "BankLoanSystem.Core\\Models\\Entities\\Loan.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:37:35.455Z",
+              "WhenOpened": "2025-08-03T09:39:38.948Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,140 @@
+<!-- admin-dashboard.component.html -->
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Admin Dashboard</h2>
+    <button class="btn btn-sm btn-outline-primary" (click)="loadLoans()" [disabled]="isLoading">
+      <i class="fas fa-sync-alt" [class.fa-spin]="isLoading"></i> Refresh
+    </button>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="row mb-4">
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-primary h-100">
+        <div class="card-body">
+          <h5 class="card-title">Total Loans</h5>
+          <p class="card-text display-6">{{ loans.length }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-warning h-100">
+        <div class="card-body">
+          <h5 class="card-title">Pending</h5>
+          <p class="card-text display-6">{{ pendingCount }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-success h-100">
+        <div class="card-body">
+          <h5 class="card-title">Approved</h5>
+          <p class="card-text display-6">{{ approvedCount }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-danger h-100">
+        <div class="card-body">
+          <h5 class="card-title">Rejected</h5>
+          <p class="card-text display-6">{{ rejectedCount }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter Controls -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="statusFilter" class="form-label">Filter by Status</label>
+            <select id="statusFilter" class="form-select" [(ngModel)]="statusFilter" (change)="onFilterChange()">
+              <option value="all">All Statuses</option>
+              <option value="0">Pending</option>
+              <option value="1">Approved</option>
+              <option value="2">Rejected</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="searchQuery" class="form-label">Search</label>
+            <input type="text" id="searchQuery" class="form-control" [(ngModel)]="searchQuery"
+              (input)="onFilterChange()" placeholder="Search by name, type, or ID">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loan Applications Table -->
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4>Loan Applications</h4>
+      <span class="badge bg-secondary">Showing {{ filteredLoans.length }} of {{ loans.length }}</span>
+    </div>
+
+    <div class="card-body">
+      <!-- Loading Indicator -->
+      <div *ngIf="isLoading" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Loading loan applications...</p>
+      </div>
+
+      <!-- No Loans Message -->
+      <div *ngIf="!isLoading && filteredLoans.length === 0" class="text-center py-5">
+        <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
+        <h5>No loan applications found</h5>
+        <p class="text-muted">Try adjusting your filters or search query</p>
+      </div>
+
+      <!-- Loans Table -->
+      <div *ngIf="!isLoading && filteredLoans.length > 0" class="table-responsive">
+        <table class="table table-hover">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>Applicant</th>
+              <th>Amount</th>
+              <th>Duration</th>
+              <th>Type</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let loan of filteredLoans">
+              <td>{{ loan.id }}</td>
+              <td>
+                <div>
+                  {{ loan.appUserFirstName }} {{ loan.appUserLastName ?? "" }}
+                </div>
+              </td>
+              <td>{{ loan.amount | currency:'EGP ' }}</td>
+              <td>{{ loan.duration }} months</td>
+              <td>{{ loan.loanTypeName || 'N/A' }}</td>
+              <td>
+                <span class="badge" [ngClass]="{
+                  'bg-warning': loan.status === 0,
+                  'bg-success': loan.status === 1,
+                  'bg-danger': loan.status === 2
+                }">
+                  {{ getStatusText(loan.status) }}
+                </span>
+              </td>
+              <td>
+                <a [routerLink]="['/admin/loans', loan.id]" class="btn btn-sm btn-primary me-2">
+                  <i class="fas fa-eye"></i> View
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

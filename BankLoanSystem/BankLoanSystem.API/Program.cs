@@ -63,13 +63,12 @@ namespace BankLoanSystem.API
             //Cors
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAngularApp", policy =>
-                    policy
-                        .WithOrigins("http://localhost:4200")
+                options.AddPolicy("AllowAngularApp",
+                    builder => builder
+                        .WithOrigins("http://localhost:4200") // Your Angular app URL
                         .AllowAnyHeader()
                         .AllowAnyMethod()
-                        .AllowCredentials()
-                );
+                        .AllowCredentials());
             });
 
             //Service Collection
@@ -100,6 +99,8 @@ namespace BankLoanSystem.API
             });
 
             var app = builder.Build();
+
+            app.UseCors("AllowAngularApp");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

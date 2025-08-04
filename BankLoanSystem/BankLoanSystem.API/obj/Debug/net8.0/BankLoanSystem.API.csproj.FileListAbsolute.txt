@@ -185,10 +185,10 @@ E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\D
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BankLoanSystem.API.props
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BankLoanSystem.API.props
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\BankLoan.FB8115FF.Up2Date
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\BankLoanSystem.API.dll
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\refint\BankLoanSystem.API.dll
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\BankLoanSystem.API.pdb
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\BankLoanSystem.API.genruntimeconfig.cache
 E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\ref\BankLoanSystem.API.dll
+E:\Bank Misr\Solo Project\BankLoanSystem\BankLoanSystem\BankLoanSystem.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
