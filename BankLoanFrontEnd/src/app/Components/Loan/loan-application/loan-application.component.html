@@ -1,0 +1,70 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-center">Loan Application</h3>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="loanForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="loanTypeId" class="form-label">Loan Type</label>
+              <select class="form-select" id="loanTypeId" formControlName="loanTypeId">
+                <option value="">Select Loan Type</option>
+                <option *ngFor="let type of loanTypes" [value]="type.id">{{ type.name }}</option>
+              </select>
+              <div *ngIf="loanForm.get('loanTypeId')?.invalid && loanForm.get('loanTypeId')?.touched"
+                class="text-danger">
+                Loan type is required
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="amount" class="form-label">Loan Amount</label>
+              <input type="number" class="form-control" id="amount" formControlName="amount">
+              <div *ngIf="loanForm.get('amount')?.invalid && loanForm.get('amount')?.touched" class="text-danger">
+                Valid amount is required (minimum 1)
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="duration" class="form-label">Duration (months)</label>
+              <input type="number" class="form-control" id="duration" formControlName="duration">
+              <div *ngIf="loanForm.get('duration')?.invalid && loanForm.get('duration')?.touched" class="text-danger">
+                Valid duration is required (minimum 1 months)
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="nationalId" class="form-label">National ID</label>
+              <input type="file" class="form-control" id="nationalId" (change)="onNationalIdChange($event)"
+                accept=".pdf,.jpg,.jpeg,.png">
+              <small class="text-muted">Upload a clear copy of your national ID</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="salarySlip" class="form-label">Salary Slip</label>
+              <input type="file" class="form-control" id="salarySlip" (change)="onSalarySlipChange($event)"
+                accept=".pdf,.jpg,.jpeg,.png">
+              <small class="text-muted">Upload your most recent salary slip</small>
+            </div>
+
+            <div *ngIf="errorMessage" class="alert alert-danger">
+              {{ errorMessage }}
+            </div>
+
+            <div *ngIf="successMessage" class="alert alert-success">
+              {{ successMessage }}
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100"
+              [disabled]="loanForm.invalid || !nationalIdFile || !salarySlipFile || isLoading">
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              {{ isLoading ? 'Submitting...' : 'Submit Application' }}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

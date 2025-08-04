@@ -27,6 +27,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAll()
         {
             var result = await _mediator.Send(new GetAllLoanTypesQuery());
@@ -35,6 +36,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _mediator.Send(new GetLoanTypeByIdQuery(id));

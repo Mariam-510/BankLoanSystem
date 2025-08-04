@@ -1,0 +1,27 @@
+.badge {
+  padding: 0.5em 0.75em;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.table-responsive {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.btn-group-sm .btn {
+  padding: 0.25rem 0.5rem;
+}
+
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.table th {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.table td {
+  vertical-align: middle;
+}

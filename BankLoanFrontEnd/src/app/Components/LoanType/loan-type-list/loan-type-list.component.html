@@ -1,0 +1,43 @@
+<!-- loan-type-list.component.html -->
+<div class="container mt-4">
+  <h2 class="mb-4">Loan Types Management</h2>
+
+  <div class="mb-3">
+    <a routerLink="/loan-types/create" class="btn btn-primary">Add New Loan Type</a>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h4>Existing Loan Types</h4>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let type of loanTypes">
+            <td>{{ type.id }}</td>
+            <td>{{ type.name }}</td>
+            <td>
+              <button class="btn btn-sm btn-primary me-2" (click)="editLoanType(type.id)">Edit</button>
+              <button class="btn btn-sm btn-danger" (click)="deleteLoanType(type.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

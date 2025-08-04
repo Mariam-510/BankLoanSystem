@@ -1,0 +1,77 @@
+<div class="container mt-4">
+  <!-- Header Section -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>My Loans</h2>
+    <button class="btn btn-primary" (click)="loadLoans()" [disabled]="isLoading">
+      <i class="fas fa-sync-alt" [class.fa-spin]="isLoading"></i> Refresh
+    </button>
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Loading Indicator -->
+  <div *ngIf="isLoading" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-2">Loading loans...</p>
+  </div>
+
+  <!-- User View -->
+  <div *ngIf="!isLoading">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">My Loan Applications</h4>
+        <a routerLink="/apply" class="btn btn-sm btn-primary">
+          <i class="fas fa-plus me-1"></i> New Application
+        </a>
+      </div>
+      <div class="card-body">
+        <div *ngIf="userLoans.length === 0" class="text-center py-5">
+          <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
+          <h5>No loan applications found</h5>
+          <p class="text-muted">You haven't applied for any loans yet</p>
+          <a routerLink="/apply" class="btn btn-primary mt-3">
+            <i class="fas fa-plus me-1"></i> Apply for a Loan
+          </a>
+        </div>
+
+        <div *ngIf="userLoans.length > 0" class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Duration</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let loan of userLoans">
+                <td>{{ loan.id }}</td>
+                <td>{{ loan.amount | currency:'EGP ' }}</td>
+                <td>{{ loan.duration }} months</td>
+                <td>{{ loan.loanTypeName || 'N/A' }}</td>
+                <td>
+                  <span class="badge" [ngClass]="{
+                    'bg-warning': loan.status === 0,
+                    'bg-success': loan.status === 1,
+                    'bg-danger': loan.status === 2
+                  }">
+                    {{ getStatusText(loan.status) }}
+                  </span>
+                </td>
+                <td>{{ loan.createdAt | date:'medium' }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

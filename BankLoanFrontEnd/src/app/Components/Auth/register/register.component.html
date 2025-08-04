@@ -1,0 +1,123 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+          <h3 class="text-center mb-0">Create Account</h3>
+        </div>
+        <div class="card-body p-4">
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
+            <!-- First Name -->
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" formControlName="firstName"
+                [ngClass]="{ 'is-invalid': registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched }">
+              <div *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched"
+                class="invalid-feedback">
+                <div *ngIf="registerForm.get('firstName')?.errors?.['required']">
+                  First name is required
+                </div>
+                <div *ngIf="registerForm.get('firstName')?.errors?.['pattern']">
+                  Only letters and spaces allowed
+                </div>
+              </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" formControlName="lastName"
+                [ngClass]="{ 'is-invalid': registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched }">
+              <div *ngIf="registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched"
+                class="invalid-feedback">
+                <div *ngIf="registerForm.get('lastName')?.errors?.['pattern']">
+                  Only letters and spaces allowed
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" formControlName="email"
+                [ngClass]="{ 'is-invalid': registerForm.get('email')?.invalid && registerForm.get('email')?.touched }">
+              <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched"
+                class="invalid-feedback">
+                <div *ngIf="registerForm.get('email')?.errors?.['required']">
+                  Email is required
+                </div>
+                <div *ngIf="registerForm.get('email')?.errors?.['email']">
+                  Please enter a valid email
+                </div>
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" formControlName="password"
+                [ngClass]="{ 'is-invalid': registerForm.get('password')?.invalid && registerForm.get('password')?.touched }">
+              <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched"
+                class="invalid-feedback">
+                <div *ngIf="registerForm.get('password')?.errors?.['required']">
+                  Password is required
+                </div>
+                <div
+                  *ngIf="registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.touched">
+                  Password must be at least 8 characters.
+                </div>
+                <div
+                  *ngIf="registerForm.get('password')?.hasError('maxlength') && registerForm.get('password')?.touched">
+                  Password cannot exceed 10 characters.
+                </div>
+                <div *ngIf="registerForm.get('password')?.hasError('pattern') && registerForm.get('password')?.touched">
+                  Password must contain at least one uppercase letter, one lowercase letter, one number, and one
+                  special character.
+                </div>
+              </div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-4">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword"
+                [ngClass]="{ 'is-invalid': registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched }">
+              <div *ngIf="registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched"
+                class="invalid-feedback">
+                <div *ngIf="registerForm.get('confirmPassword')?.errors?.['required']">
+                  Please confirm your password
+                </div>
+                <div
+                  *ngIf="registerForm.get('password')?.touched && registerForm.get('confirmPassword')?.touched && registerForm.get('password')?.value !== registerForm.get('confirmPassword')?.value">
+                  Confirm Passwords do not match.
+                </div>
+              </div>
+            </div>
+
+            <!-- Error Message -->
+            <div *ngIf="errorMessage" class="alert alert-danger">
+              {{ errorMessage }}
+            </div>
+
+            <!-- Success Message -->
+            <div *ngIf="successMessage" class="alert alert-success">
+              {{ successMessage }}
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid || isLoading">
+                <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-1" role="status"
+                  aria-hidden="true"></span>
+                {{ isLoading ? 'Registering...' : 'Register' }}
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-center">
+          Already have an account? <a routerLink="/login" class="text-primary">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

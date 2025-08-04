@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-center">Confirm Email</h3>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="confirmForm" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3">
+              <label for="code" class="form-label">Confirmation Code</label>
+              <input type="text" class="form-control" id="code" formControlName="code">
+              <div *ngIf="confirmForm.get('code')?.invalid && confirmForm.get('code')?.touched" class="text-danger">
+                Confirmation code is required
+              </div>
+            </div>
+
+            <div *ngIf="errorMessage" class="alert alert-danger">
+              {{ errorMessage }}
+            </div>
+
+            <div *ngIf="successMessage" class="alert alert-success">
+              {{ successMessage }}
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mb-2" [disabled]="confirmForm.invalid || isLoading">
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              {{ isLoading ? 'Confirming...' : 'Confirm Email' }}
+            </button>
+
+            <button type="button" class="btn btn-link w-100" (click)="resendCode()">
+              Resend Confirmation Code
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
