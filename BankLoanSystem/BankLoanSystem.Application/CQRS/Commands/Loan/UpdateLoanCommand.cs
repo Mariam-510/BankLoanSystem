@@ -23,13 +23,11 @@ namespace BankLoanSystem.Application.CQRS.Commands.Loan
         [NonNegative("Duration must be non-negative")]
         public int Duration { get; set; }
 
-        [Required]
         [AllowedFileExtensions]
-        public IFormFile NationalId { get; set; }
+        public IFormFile? NationalId { get; set; }
 
-        [Required]
         [AllowedFileExtensions]
-        public IFormFile SalarySlip { get; set; }
+        public IFormFile? SalarySlip { get; set; }
 
         public string CurrentUserId { get; set; }
 

@@ -137,16 +137,16 @@ namespace BankLoanSystem.API.Controllers
             return StatusCode(result.StatusCode, result);
         }
 
-        [HttpDelete]
-        [Authorize]
-        public async Task<IActionResult> Delete()
-        {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //[HttpDelete]
+        //[Authorize]
+        //public async Task<IActionResult> Delete()
+        //{
+        //    var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            var result = await _authService.DeleteAccountAsync(userId);
+        //    var result = await _authService.DeleteAccountAsync(userId);
 
-            return StatusCode(result.StatusCode, result);
-        }
+        //    return StatusCode(result.StatusCode, result);
+        //}
 
 
     }

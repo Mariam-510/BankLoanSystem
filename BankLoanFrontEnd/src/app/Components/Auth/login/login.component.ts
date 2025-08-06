@@ -23,7 +23,7 @@ export class LoginComponent {
   ) {
     // In your component
     this.loginForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
+      email: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
       password: ['', [Validators.required]],
       rememberMe: [false]  // Add this
     });

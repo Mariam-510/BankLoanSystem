@@ -27,7 +27,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAll()
         {
             var result = await _mediator.Send(new GetAllLoanTypesQuery());
@@ -36,7 +36,7 @@ namespace BankLoanSystem.API.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _mediator.Send(new GetLoanTypeByIdQuery(id));
@@ -76,21 +76,27 @@ namespace BankLoanSystem.API.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateLoanTypeDto updateLoanTypeDto)
         {
-
-            UpdateLoanTypeCommand command = _mapper.Map<UpdateLoanTypeCommand>(updateLoanTypeDto);
-
-            command.Id = id;
-
-            var result = await _mediator.Send(command);
-
-            if (result == null)
+            try
             {
-                var notFoundResponse = ApiResponse<object>.ErrorResponse("Loan Type Not Found", 404);
-                return NotFound(notFoundResponse);
-            }
+                UpdateLoanTypeCommand command = _mapper.Map<UpdateLoanTypeCommand>(updateLoanTypeDto);
 
-            var response = ApiResponse<LoanTypeDto>.SuccessResponse(result, "Loan Type updated successfully");
-            return Ok(response);
+                command.Id = id;
+
+                var result = await _mediator.Send(command);
+
+                if (result == null)
+                {
+                    var notFoundResponse = ApiResponse<object>.ErrorResponse("Loan Type Not Found", 404);
+                    return NotFound(notFoundResponse);
+                }
+
+                var response = ApiResponse<LoanTypeDto>.SuccessResponse(result, "Loan Type updated successfully");
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ApiResponse<object>.ErrorResponse("An error occurred while editing loan type.", 500, new List<string> { ex.Message }));
+            }
         }
 
         [HttpDelete("{id}")]

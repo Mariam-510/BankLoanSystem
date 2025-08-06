@@ -22,7 +22,7 @@ export class ForgotPasswordComponent {
     private fb: FormBuilder
   ) {
     this.forgotForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]]
+      email: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]]
     });
   }
 
@@ -38,7 +38,9 @@ export class ForgotPasswordComponent {
       next: () => {
         this.successMessage = 'Password reset instructions have been sent to your email';
         setTimeout(() => {
-          this.router.navigate(['/login']);
+          this.router.navigate(['/reset-code'], {
+            queryParams: { email: this.forgotForm.value.email }
+          });
         }, 3000);
       },
       error: (error) => {

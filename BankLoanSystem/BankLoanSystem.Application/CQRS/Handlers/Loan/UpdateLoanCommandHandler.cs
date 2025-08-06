@@ -42,9 +42,11 @@ namespace BankLoanSystem.Application.CQRS.Handlers.Loan
             existingLoan.Duration = request.Duration;
             existingLoan.Amount = request.Amount;
 
-            existingLoan.NationalIdPath = _fileService.UpdateFile("NationalIds", request.NationalId, existingLoan.NationalIdPath);
+            if(request.NationalId != null)
+                existingLoan.NationalIdPath = _fileService.UpdateFile("NationalIds", request.NationalId, existingLoan.NationalIdPath);
 
-            existingLoan.SalarySlipPath = _fileService.UpdateFile("SalarySlips", request.SalarySlip, existingLoan.SalarySlipPath);
+            if (request.SalarySlip != null)
+                existingLoan.SalarySlipPath = _fileService.UpdateFile("SalarySlips", request.SalarySlip, existingLoan.SalarySlipPath);
 
 
             var updatedLoan = await _loanRepository.UpdateAsync((int) request.Id, existingLoan);

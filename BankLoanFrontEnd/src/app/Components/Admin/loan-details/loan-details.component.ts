@@ -1,15 +1,17 @@
 // loan-details.component.ts
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LoanService } from '../../../Services/ApiServices/loan.service';
+import { CommonModule } from '@angular/common';
 import { API_CONFIG } from '../../../app.config';
+import { SafeUrlPipe } from '../../../Pipes/safe-url.pipe';
+
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-loan-details',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, SafeUrlPipe],
   templateUrl: './loan-details.component.html',
   styleUrls: ['./loan-details.component.css']
 })
@@ -18,6 +20,7 @@ export class LoanDetailsComponent implements OnInit {
   isLoading = false;
   errorMessage = '';
   successMessage = '';
+  previewUrl: string | null = null;
   apiConfig = API_CONFIG;
 
   constructor(
@@ -64,10 +67,6 @@ export class LoanDetailsComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.router.navigate(['/admin/dashboard']);
-  }
-
   getStatusText(status: number): string {
     switch (status) {
       case 0: return 'Pending';
@@ -77,8 +76,58 @@ export class LoanDetailsComponent implements OnInit {
     }
   }
 
-  // loan-details.component.ts
   getDocumentUrl(path: string): string {
     return `${this.apiConfig.apiUrl + path}`;
+  }
+
+  previewDocument(documentPath: string) {
+    this.previewUrl = this.getDocumentUrl(documentPath);
+    const modal = new bootstrap.Modal(document.getElementById('documentPreviewModal'));
+    modal.show();
+  }
+
+  async downloadFile(fileUrl: string) {
+    if (!fileUrl) return;
+
+    try {
+      const response = await fetch(fileUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = this.getFilenameFromUrl(fileUrl);
+      a.click();
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed:', error);
+      this.errorMessage = 'Failed to download file. Please try again.';
+    }
+  }
+
+  private getFilenameFromUrl(url: string): string {
+    try {
+      const cleanUrl = url.split('?')[0].split('#')[0];
+      const lastSegment = cleanUrl.split('/').pop() || '';
+      return lastSegment.includes('.') ? lastSegment : 'document';
+    } catch {
+      return 'document';
+    }
+  }
+
+  calculateDueDate(createdDate: Date | string, durationMonths: number): Date {
+    const date = new Date(createdDate);
+    date.setMonth(date.getMonth() + durationMonths);
+    return date;
+  }
+
+  isDueDatePassed(loan: any): boolean {
+    const dueDate = this.calculateDueDate(loan.createdAt, loan.duration);
+    return new Date() > dueDate && loan.status === 1;
+  }
+
+  getDaysOverdue(loan: any): number {
+    const dueDate = this.calculateDueDate(loan.createdAt, loan.duration);
+    const diff = new Date().getTime() - dueDate.getTime();
+    return Math.floor(diff / (1000 * 60 * 60 * 24));
   }
 }

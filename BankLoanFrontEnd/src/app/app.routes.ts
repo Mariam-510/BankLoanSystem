@@ -14,6 +14,10 @@ import { CreateLoanTypeComponent } from './Components/LoanType/create-loan-type/
 import { EditLoanTypeComponent } from './Components/LoanType/edit-loan-type/edit-loan-type.component';
 import { LoanTypeListComponent } from './Components/LoanType/loan-type-list/loan-type-list.component';
 import { LoanDetailsComponent } from './Components/Admin/loan-details/loan-details.component';
+import { AuthGuard } from './Guards/auth.guard';
+import { LoanViewComponent } from './Components/Loan/loan-view/loan-view.component';
+import { EditLoanComponent } from './Components/Loan/edit-loan/edit-loan.component';
+import { ResetCodeComponent } from './Components/AuthForgetPassword/reset-code/reset-code.component';
 
 export const routes: Routes = [
 
@@ -21,12 +25,15 @@ export const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'confirm-email', component: ConfirmEmailComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'reset-code', component: ResetCodeComponent },
   { path: 'reset-password', component: ResetPasswordComponent },
 
   // User routes
-  { path: 'loans', component: LoanListComponent, canActivate: [ClientGuard] },
+  { path: 'loans', component: LoanListComponent, canActivate: [AuthGuard] },
   { path: 'apply', component: LoanApplicationComponent, canActivate: [ClientGuard] },
-  { path: 'profile', component: UserProfileComponent, canActivate: [ClientGuard] },
+  { path: 'loans/edit/:id', component: EditLoanComponent, canActivate: [ClientGuard] },
+  { path: 'loans/view/:id', component: LoanViewComponent, canActivate: [ClientGuard] },
+  { path: 'profile', component: UserProfileComponent, canActivate: [AuthGuard] },
 
   // Admin routes
   { path: 'admin/dashboard', component: AdminDashboardComponent, canActivate: [AdminGuard] },

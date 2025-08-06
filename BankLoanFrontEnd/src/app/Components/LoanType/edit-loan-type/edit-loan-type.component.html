@@ -1,35 +1,64 @@
 <!-- loan-type-edit.component.html -->
-<div class="container mt-4">
-  <h2 class="mb-4">Edit Loan Type</h2>
+<div class="container py-4">
+  <!-- Header Section -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold" style="color: #dc3545;">
+      <i class="bi bi-pencil-square me-2"></i>Edit Loan Type
+    </h2>
+    <button class="btn btn-outline-danger" routerLink="/loan-types">
+      <i class="bi bi-arrow-left me-1"></i> Back to List
+    </button>
+  </div>
 
-  <div class="card mb-4">
-    <div class="card-header">
-      <h4>Edit Loan Type</h4>
+  <!-- Form Card -->
+  <div class="card border-0 shadow-lg" style="border-radius: 10px;">
+    <div class="card-header bg-white d-flex justify-content-between align-items-center py-3 border-bottom">
+      <h4 class="mb-0 fw-semibold" style="color: #dc3545;">
+        <i class="bi bi-file-earmark-text-fill me-2"></i>Edit Loan Type Details
+      </h4>
+      <span class="badge bg-danger bg-opacity-10 text-dark py-2 px-3">
+        ID: {{ typeId }}
+      </span>
     </div>
+
     <div class="card-body">
       <form [formGroup]="loanTypeForm" (ngSubmit)="onSubmit()">
-        <div class="mb-3">
-          <label for="name" class="form-label">Loan Type Name</label>
-          <input type="text" class="form-control" id="name" formControlName="name">
-          <div *ngIf="loanTypeForm.get('name')?.invalid && loanTypeForm.get('name')?.touched" class="text-danger">
+        <!-- Name Field -->
+        <div class="mb-4">
+          <label for="name" class="form-label fw-semibold small text-muted mb-1">LOAN TYPE NAME</label>
+          <input type="text" class="form-control border-2 py-2" id="name" formControlName="name"
+            style="border-color: #e0e0e0; border-radius: 8px;" placeholder="Enter updated loan type name">
+          <div *ngIf="loanTypeForm.get('name')?.invalid && loanTypeForm.get('name')?.touched"
+            class="text-danger small mt-1">
+            <i class="bi bi-exclamation-circle-fill me-1"></i>
             Valid name is required (max 100 characters)
           </div>
         </div>
 
-        <div *ngIf="errorMessage" class="alert alert-danger">
-          {{ errorMessage }}
+        <!-- Error Message -->
+        <div *ngIf="errorMessage" class="alert alert-danger border-danger shadow-sm">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i> {{ errorMessage }}
         </div>
 
-        <div *ngIf="successMessage" class="alert alert-success">
-          {{ successMessage }}
+        <!-- Success Message -->
+        <div *ngIf="successMessage" class="alert alert-success border-success shadow-sm">
+          <i class="bi bi-check-circle-fill me-2"></i> {{ successMessage }}
         </div>
 
-        <button type="submit" class="btn btn-primary me-2" [disabled]="loanTypeForm.invalid">
-          Update
-        </button>
-        <button type="button" class="btn btn-secondary" routerLink="/loan-types">
-          Cancel
-        </button>
+        <!-- Form Actions -->
+        <div class="d-flex justify-content-end gap-2 mt-4">
+          <button type="button" class="btn btn-outline-secondary" routerLink="/loan-types">
+            <i class="bi bi-x-lg me-1"></i> Cancel
+          </button>
+          <button type="submit" class="btn btn-danger" [disabled]="loanTypeForm.invalid || isLoading">
+            <span *ngIf="!isLoading">
+              <i class="bi bi-save-fill me-1"></i> Update
+            </span>
+            <span *ngIf="isLoading">
+              <i class="bi bi-arrow-repeat bi-spin me-1"></i> Updating...
+            </span>
+          </button>
+        </div>
       </form>
     </div>
   </div>

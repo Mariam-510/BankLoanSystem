@@ -1,0 +1,174 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold" style="color: #dc3545;">
+      <i class="bi bi-file-earmark-text me-2"></i>Edit Loan Application
+    </h2>
+    <button class="btn btn-outline-danger" routerLink="/loans">
+      <i class="bi bi-arrow-left me-1"></i> Back to My Loans
+    </button>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+      <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+          <h4 class="text-center mb-0">
+            <i class="bi bi-pencil-square me-2"></i>
+            Update Loan Application
+          </h4>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="loanForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Loan Amount -->
+                <div class="mb-4">
+                  <label for="amount" class="form-label fw-bold">Loan Amount (EGP)</label>
+                  <div class="input-group">
+                    <span class="input-group-text border border-secondary">EGP</span>
+                    <input type="number" class="form-control border border-secondary" id="amount"
+                      formControlName="amount">
+                  </div>
+                  <div *ngIf="loanForm.get('amount')?.invalid && loanForm.get('amount')?.touched"
+                    class="text-danger small mt-1">
+                    <i class="bi bi-exclamation-circle-fill"></i> Valid amount is required (minimum 1 EGP)
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- Duration -->
+                <div class="mb-4">
+                  <label for="duration" class="form-label fw-bold">Duration (months)</label>
+                  <input type="number" class="form-control border border-secondary" id="duration"
+                    formControlName="duration">
+                  <div *ngIf="loanForm.get('duration')?.invalid && loanForm.get('duration')?.touched"
+                    class="text-danger small mt-1">
+                    <i class="bi bi-exclamation-circle-fill"></i> Valid duration is required (minimum 1 month)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Loan Type -->
+            <!-- <div class="mb-4">
+              <label for="loanTypeId" class="form-label fw-bold">Loan Type</label>
+              <select class="form-select border border-secondary" id="loanTypeId" formControlName="loanTypeId">
+                <option value="">Select Loan Type</option>
+                <option *ngFor="let type of loanTypes" [value]="type.id">{{ type.name }}</option>
+              </select>
+              <div *ngIf="loanForm.get('loanTypeId')?.invalid && loanForm.get('loanTypeId')?.touched"
+                class="text-danger small mt-1">
+                <i class="bi bi-exclamation-circle-fill"></i> Loan type is required
+              </div>
+            </div> -->
+
+            <div class="mb-4">
+              <label class="form-label fw-bold">Loan Type</label>
+              <input class="form-control border border-secondary" [value]="loan.loanTypeName" readonly disabled>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <!-- National ID Upload -->
+                <div class="mb-3">
+                  <label for="nationalId" class="form-label fw-bold">National ID (optional update)</label>
+                  <input type="file" class="form-control border border-secondary" id="nationalId"
+                    (change)="onNationalIdChange($event)" accept=".pdf,.jpg,.jpeg,.png">
+                  <small class="text-muted">Accepted formats: PDF, JPG, PNG (Max 5MB)</small>
+
+                  <!-- Preview Section -->
+                  <div *ngIf="nationalIdPreview" class="mt-2">
+                    <div class="d-flex align-items-center border rounded p-2 bg-light">
+                      <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 me-2"
+                        *ngIf="nationalIdFile?.type === 'application/pdf'"></i>
+                      <i class="bi bi-file-image-fill text-danger fs-4 me-2"
+                        *ngIf="nationalIdFile?.type?.includes('image')"></i>
+                      <div class="flex-grow-1">
+                        <p class="mb-0 fw-semibold">{{ nationalIdFile?.name }}</p>
+                        <small class="text-muted">{{ nationalIdFile?.size ?? 0 | fileSize }}</small>
+                      </div>
+                      <button type="button" class="btn btn-sm btn-outline-danger" (click)="removeNationalId()">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </div>
+                    <img *ngIf="nationalIdPreview && nationalIdFile?.type?.includes('image')" [src]="nationalIdPreview"
+                      class="img-thumbnail mt-2" style="max-height: 150px;">
+                  </div>
+                  <div *ngIf="loan?.nationalIdPath && !nationalIdPreview" class="mt-2">
+                    <div class="d-flex align-items-center p-2 border rounded bg-light">
+                      <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 me-2"></i>
+                      <div class="flex-grow-1">
+                        <p class="mb-0 fw-semibold">Current Document</p>
+                        <a [href]="getDocumentUrl(loan?.nationalIdPath)" target="_blank"
+                          class="btn btn-sm btn-outline-secondary mt-1">
+                          <i class="bi bi-download me-1"></i> View Current
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- Salary Slip Upload -->
+                <div class="mb-3">
+                  <label for="salarySlip" class="form-label fw-bold">Salary Slip (optional update)</label>
+                  <input type="file" class="form-control border border-secondary" id="salarySlip"
+                    (change)="onSalarySlipChange($event)" accept=".pdf,.jpg,.jpeg,.png">
+                  <small class="text-muted">Accepted formats: PDF, JPG, PNG (Max 5MB)</small>
+
+                  <!-- Preview Section -->
+                  <div *ngIf="salarySlipPreview" class="mt-2">
+                    <div class="d-flex align-items-center border rounded p-2 bg-light">
+                      <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 me-2"
+                        *ngIf="salarySlipFile?.type === 'application/pdf'"></i>
+                      <i class="bi bi-file-image-fill text-danger fs-4 me-2"
+                        *ngIf="salarySlipFile?.type?.includes('image')"></i>
+                      <div class="flex-grow-1">
+                        <p class="mb-0 fw-semibold">{{ salarySlipFile?.name }}</p>
+                        <small class="text-muted">{{ salarySlipFile?.size ?? 0 | fileSize }}</small>
+                      </div>
+                      <button type="button" class="btn btn-sm btn-outline-danger" (click)="removeSalarySlip()">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </div>
+                    <img *ngIf="salarySlipPreview && salarySlipFile?.type?.includes('image')" [src]="salarySlipPreview"
+                      class="img-thumbnail mt-2" style="max-height: 150px;">
+                  </div>
+                  <div *ngIf="loan?.salarySlipPath && !salarySlipPreview" class="mt-2">
+                    <div class="d-flex align-items-center p-2 border rounded bg-light">
+                      <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 me-2"></i>
+                      <div class="flex-grow-1">
+                        <p class="mb-0 fw-semibold">Current Document</p>
+                        <a [href]="getDocumentUrl(loan?.salarySlipPath)" target="_blank"
+                          class="btn btn-sm btn-outline-secondary mt-1">
+                          <i class="bi bi-download me-1"></i> View Current
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Messages -->
+            <div *ngIf="errorMessage" class="alert alert-danger border-danger">
+              <i class="bi bi-exclamation-triangle-fill me-2"></i> {{ errorMessage }}
+            </div>
+
+            <div *ngIf="successMessage" class="alert alert-success border-success">
+              <i class="bi bi-check-circle-fill me-2"></i> {{ successMessage }}
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid mt-3">
+              <button type="submit" class="btn btn-danger py-2 fw-bold" [disabled]="loanForm.invalid || isLoading">
+                <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-2" role="status"></span>
+                {{ isLoading ? 'Updating...' : 'Update Application' }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
