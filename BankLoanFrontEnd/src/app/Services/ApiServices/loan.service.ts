@@ -42,12 +42,8 @@ export class LoanService {
   }
 
   updateLoan(id: number, loanData: any): Observable<any> {
-    const formData = new FormData();
-    formData.append('Amount', loanData.amount);
-    formData.append('Duration', loanData.duration);
-    if (loanData.nationalId) formData.append('NationalId', loanData.nationalId);
-    if (loanData.salarySlip) formData.append('SalarySlip', loanData.salarySlip);
-    return this.http.put(`${this.apiUrl}/${id}`, formData);
+
+    return this.http.put(`${this.apiUrl}/${id}`, loanData);
   }
 
   deleteLoan(id: number): Observable<any> {

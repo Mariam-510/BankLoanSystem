@@ -27,6 +27,13 @@ namespace BankLoanSystem.Application.CQRS.Handlers.LoanType
             var existing = await _repository.GetByIdAsync((int) request.Id);
             if (existing == null) return null;
 
+            // Check if name already exists
+            var existingLoanType = await _repository.GetByNameAsync(request.Name);
+            if (existingLoanType != null && existingLoanType.Id != existing.Id)
+            {
+                throw new InvalidOperationException("A loan type with the same name already exists.");
+            }
+
             existing.Name = request.Name;
             var loanType = await _repository.UpdateAsync((int) request.Id, existing);
 

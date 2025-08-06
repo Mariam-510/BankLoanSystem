@@ -1,0 +1,110 @@
+/* loan-type-list.component.css */
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+  border-color: #f1f1f1;
+}
+
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+  border-width: 1.5px;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-group-sm>.btn {
+  padding: 0.35rem 0.65rem;
+}
+
+tr:hover {
+  background-color: rgba(220, 53, 69, 0.03) !important;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(220, 53, 69, 0.3);
+}
+
+.btn-danger:active {
+  transform: translateY(0);
+}
+
+.badge {
+  font-size: small !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.btn-group-sm>.btn {
+  padding: 0.5rem 0.75rem !important;
+  margin: 0 0.15rem !important;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    border: 0;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem !important;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-right: 1rem;
+  }
+
+  .table td:last-child {
+    border-bottom: 0;
+  }
+}

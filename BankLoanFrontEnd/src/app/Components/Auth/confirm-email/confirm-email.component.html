@@ -1,40 +1,64 @@
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <h3 class="text-center">Confirm Email</h3>
-        </div>
-        <div class="card-body">
-          <form [formGroup]="confirmForm" (ngSubmit)="onSubmit()">
+<section class="container vh-100">
+  <div class="container-fluid h-100 p-0 m-0">
+    <div class="row g-0 h-100">
+      <!-- Left Column - Red Theme Image (full height) -->
+      <div class="col-lg-6 d-none d-lg-block h-100 p-0 position-relative">
+        <img src="images/download.jpeg" class="position-absolute top-50 start-50 translate-middle"
+          alt="Email confirmation" style="object-fit: cover; max-height: 100%; max-width: 100%;">
+      </div>
 
-            <div class="mb-3">
-              <label for="code" class="form-label">Confirmation Code</label>
-              <input type="text" class="form-control" id="code" formControlName="code">
-              <div *ngIf="confirmForm.get('code')?.invalid && confirmForm.get('code')?.touched" class="text-danger">
-                Confirmation code is required
+      <!-- Right Column - Form -->
+      <div class="col-lg-6 col-xl-5 mx-auto my-auto">
+        <div class="card shadow-lg" style="border-radius: 10px; border: none;">
+          <div class="card-body px-5 px-md-5 pb-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-envelope fa-3x" style="color: #dc3545;"></i>
+              <h2 class="fw-bold mt-3" style="color: #dc3545;">Confirm Email</h2>
+              <p class="text-muted">Enter the verification code sent to your email</p>
+            </div>
+
+            <form [formGroup]="confirmForm" (ngSubmit)="onSubmit()" novalidate>
+              <!-- Confirmation Code -->
+              <div class="form-floating mb-4">
+                <input type="text" id="code" class="form-control" formControlName="code"
+                  [ngClass]="{ 'is-invalid': confirmForm.get('code')?.invalid && confirmForm.get('code')?.touched }"
+                  placeholder="Confirmation Code">
+                <label for="code">Confirmation Code</label>
+                <div *ngIf="confirmForm.get('code')?.invalid && confirmForm.get('code')?.touched"
+                  class="invalid-feedback">
+                  <div *ngIf="confirmForm.get('code')?.errors?.['required']">
+                    Confirmation code is required
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div *ngIf="errorMessage" class="alert alert-danger">
-              {{ errorMessage }}
-            </div>
+              <!-- Messages -->
+              <div *ngIf="errorMessage" class="alert alert-danger">
+                {{ errorMessage }}
+              </div>
+              <div *ngIf="successMessage" class="alert alert-success">
+                {{ successMessage }}
+              </div>
 
-            <div *ngIf="successMessage" class="alert alert-success">
-              {{ successMessage }}
-            </div>
+              <!-- Submit Button -->
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-danger py-3" [disabled]="confirmForm.invalid || isLoading"
+                  style="background-color: #dc3545; border: none; font-weight: 600;">
+                  <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-1" role="status"
+                    aria-hidden="true"></span>
+                  {{ isLoading ? 'Confirming...' : 'Confirm Email' }}
+                </button>
+              </div>
 
-            <button type="submit" class="btn btn-primary w-100 mb-2" [disabled]="confirmForm.invalid || isLoading">
-              <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              {{ isLoading ? 'Confirming...' : 'Confirm Email' }}
-            </button>
-
-            <button type="button" class="btn btn-link w-100" (click)="resendCode()">
-              Resend Confirmation Code
-            </button>
-          </form>
+              <div class="text-center">
+                <button type="button" class="btn btn-link text-danger fw-bold" (click)="resendCode()">
+                  <i class="fas fa-redo me-1"></i> Resend Confirmation Code
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>

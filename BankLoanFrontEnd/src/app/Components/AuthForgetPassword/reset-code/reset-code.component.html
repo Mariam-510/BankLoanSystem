@@ -1,0 +1,64 @@
+<section class="container vh-100">
+  <div class="container-fluid h-100 p-0 m-0">
+    <div class="row g-0 h-100">
+      <!-- Left Column - Red Theme Image (full height) -->
+      <div class="col-lg-6 d-none d-lg-block h-100 p-0 position-relative">
+        <img src="images/download.jpeg" class="position-absolute top-50 start-50 translate-middle" alt="Password reset"
+          style="object-fit: cover; max-height: 100%; max-width: 100%;">
+      </div>
+
+      <!-- Right Column - Form -->
+      <div class="col-lg-6 col-xl-5 mx-auto my-auto">
+        <div class="card shadow-lg" style="border-radius: 10px; border: none;">
+          <div class="card-body px-5 px-md-5 pb-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-shield-alt fa-3x" style="color: #dc3545;"></i>
+              <h2 class="fw-bold mt-3" style="color: #dc3545;">Reset Code</h2>
+              <p class="text-muted">Enter the verification code sent to your email</p>
+            </div>
+
+            <form [formGroup]="resetCodeForm" (ngSubmit)="onSubmit()" novalidate>
+              <!-- Reset Code -->
+              <div class="form-floating mb-4">
+                <input type="text" id="code" class="form-control" formControlName="code"
+                  [ngClass]="{ 'is-invalid': resetCodeForm.get('code')?.invalid && resetCodeForm.get('code')?.touched }"
+                  placeholder="Password Reset Code">
+                <label for="code">Password Reset Code</label>
+                <div *ngIf="resetCodeForm.get('code')?.invalid && resetCodeForm.get('code')?.touched"
+                  class="invalid-feedback">
+                  <div *ngIf="resetCodeForm.get('code')?.errors?.['required']">
+                    Reset code is required
+                  </div>
+                </div>
+              </div>
+
+              <!-- Messages -->
+              <div *ngIf="errorMessage" class="alert alert-danger">
+                <i class="fas fa-exclamation-circle me-2"></i> {{ errorMessage }}
+              </div>
+              <div *ngIf="successMessage" class="alert alert-success">
+                <i class="fas fa-check-circle me-2"></i> {{ successMessage }}
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-danger py-3" [disabled]="resetCodeForm.invalid || isLoading"
+                  style="background-color: #dc3545; border: none; font-weight: 600;">
+                  <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-1" role="status"
+                    aria-hidden="true"></span>
+                  {{ isLoading ? 'Verifying...' : 'Verify Code' }}
+                </button>
+              </div>
+
+              <div class="text-center">
+                <button type="button" class="btn btn-link text-danger fw-bold" (click)="resendCode()">
+                  <i class="fas fa-paper-plane me-1"></i> Resend Reset Code
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

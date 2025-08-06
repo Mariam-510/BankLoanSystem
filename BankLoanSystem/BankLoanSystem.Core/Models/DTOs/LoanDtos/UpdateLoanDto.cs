@@ -19,13 +19,11 @@ namespace BankLoanSystem.Core.Models.DTOs.LoanDtos
         [NonNegative("Duration must be non-negative")]
         public int Duration { get; set; }
 
-        [Required]
         [AllowedFileExtensions]
-        public IFormFile NationalId { get; set; }
+        public IFormFile? NationalId { get; set; }
 
-        [Required]
         [AllowedFileExtensions]
-        public IFormFile SalarySlip { get; set; }
+        public IFormFile? SalarySlip { get; set; }
 
     }
 }

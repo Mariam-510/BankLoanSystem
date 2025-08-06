@@ -16,7 +16,6 @@ export class ResetPasswordComponent {
   successMessage = '';
   isLoading = false;
   email = '';
-  code = '';
 
   constructor(
     private authService: AuthService,
@@ -25,14 +24,21 @@ export class ResetPasswordComponent {
     private fb: FormBuilder
   ) {
     this.resetForm = this.fb.group({
-      newPassword: ['', [Validators.required, Validators.minLength(6)]],
+      newPassword: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(10),
+      Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%*?&])[A-Za-z\d@$!#%*?&]{8,10}$/)
+      ]],
       confirmPassword: ['', [Validators.required]]
-    }, { validator: this.passwordMatchValidator });
+    }
+    );
 
     this.route.queryParams.subscribe(params => {
       this.email = params['email'] || '';
-      this.code = params['code'] || '';
     });
+
+    if (!this.email) {
+      this.router.navigate(['/forgot-password']);
+      return;
+    }
   }
 
   passwordMatchValidator(form: FormGroup) {
@@ -41,7 +47,7 @@ export class ResetPasswordComponent {
   }
 
   onSubmit(): void {
-    if (this.resetForm.invalid || !this.email || !this.code) {
+    if (this.resetForm.invalid || !this.email) {
       return;
     }
 
@@ -50,7 +56,6 @@ export class ResetPasswordComponent {
 
     const resetData = {
       email: this.email,
-      code: this.code,
       newPassword: this.resetForm.value.newPassword,
       confirmPassword: this.resetForm.value.confirmPassword
     };
