@@ -59,8 +59,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-30T07:20:56.675Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -124,7 +123,7 @@
               "RelativeDocumentMoniker": "BankLoanSystem.API\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "BankLoanSystem.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwJIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAswJQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T08:25:11.858Z",
               "IsPinned": true,
