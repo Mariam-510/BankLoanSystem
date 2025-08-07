@@ -1,0 +1,6 @@
+wwwroot\NationalIds\3fab17d6-c6fd-4f3d-86c9-3e7cc68b3db2.JPG
+wwwroot\NationalIds\8433ca73-9b8e-41c6-9cde-96095c406d77.JPG
+wwwroot\NationalIds\b9ec443d-eb63-4071-b81b-fd1e37cd7abd.jpeg
+wwwroot\SalarySlips\bdfe0923-70b4-4fb6-b5af-be01bef4c48f.JPG
+wwwroot\SalarySlips\cd5d8fbe-89f8-4ce8-a0f2-52e806319522.JPG
+wwwroot\SalarySlips\eae2ef86-42a9-4e70-890d-b185dc54e426.JPG

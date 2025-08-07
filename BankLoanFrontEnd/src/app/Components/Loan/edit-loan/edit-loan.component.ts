@@ -45,9 +45,15 @@ export class EditLoanComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loanId = Number(this.route.snapshot.paramMap.get('id'));
-    // this.loadLoanTypes();
-    this.loadLoanDetails();
+    this.route.queryParams.subscribe(params => {
+      this.loanId = Number(params['id']);
+      if (!this.loanId || isNaN(this.loanId)) {
+        this.errorMessage = 'Invalid loan ID';
+        this.router.navigate(['/loans']);
+        return;
+      }
+      this.loadLoanDetails();
+    });
   }
 
   loadLoanTypes(): void {

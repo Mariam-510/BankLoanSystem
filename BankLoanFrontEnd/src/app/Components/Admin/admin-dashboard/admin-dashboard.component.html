@@ -209,8 +209,9 @@
               </td>
               <td class="px-4 py-3">
                 <div class="btn-group btn-group-sm shadow-sm" role="group">
-                  <a [routerLink]="['/admin/loans', loan.id]" class="btn btn-outline-secondary px-3 position-relative"
-                    title="View details" data-bs-toggle="tooltip" data-bs-placement="top">
+                  <a [routerLink]="['/admin/loans']" [queryParams]="{id: loan.id}"
+                    class="btn btn-outline-secondary px-3 position-relative" title="View details"
+                    data-bs-toggle="tooltip" data-bs-placement="top">
                     <i class="bi bi-eye-fill"></i>
                   </a>
                 </div>

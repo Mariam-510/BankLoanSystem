@@ -21,6 +21,7 @@ import { ResetCodeComponent } from './Components/AuthForgetPassword/reset-code/r
 
 export const routes: Routes = [
 
+  // Auth routes
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'confirm-email', component: ConfirmEmailComponent },
@@ -31,17 +32,18 @@ export const routes: Routes = [
   // User routes
   { path: 'loans', component: LoanListComponent, canActivate: [AuthGuard] },
   { path: 'apply', component: LoanApplicationComponent, canActivate: [ClientGuard] },
-  { path: 'loans/edit/:id', component: EditLoanComponent, canActivate: [ClientGuard] },
-  { path: 'loans/view/:id', component: LoanViewComponent, canActivate: [ClientGuard] },
+  { path: 'loans/edit', component: EditLoanComponent, canActivate: [ClientGuard] },
+  { path: 'loans/view', component: LoanViewComponent, canActivate: [ClientGuard] },
   { path: 'profile', component: UserProfileComponent, canActivate: [AuthGuard] },
 
   // Admin routes
   { path: 'admin/dashboard', component: AdminDashboardComponent, canActivate: [AdminGuard] },
-  { path: 'admin/loans/:id', component: LoanDetailsComponent, canActivate: [AdminGuard] },
+  { path: 'admin/loans', component: LoanDetailsComponent, canActivate: [AdminGuard] },
 
+  // Loan Types routes
   { path: 'loan-types', component: LoanTypeListComponent, canActivate: [AdminGuard] },
   { path: 'loan-types/create', component: CreateLoanTypeComponent, canActivate: [AdminGuard] },
-  { path: 'loan-types/edit/:id', component: EditLoanTypeComponent, canActivate: [AdminGuard] },
+  { path: 'loan-types/edit', component: EditLoanTypeComponent, canActivate: [AdminGuard] },
 
   { path: '', redirectTo: '/loans', pathMatch: 'full' },
   { path: '**', redirectTo: '/loans' }

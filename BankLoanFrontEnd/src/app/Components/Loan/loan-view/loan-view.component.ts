@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LoanService } from '../../../Services/ApiServices/loan.service';
 import { CommonModule } from '@angular/common';
 import { API_CONFIG } from '../../../app.config';
@@ -22,14 +22,20 @@ export class LoanViewComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private loanService: LoanService
+    private loanService: LoanService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.loadLoanDetails(+id);
-    }
+    this.route.queryParams.subscribe(params => {
+      const id = params['id'];
+      if (id) {
+        this.loadLoanDetails(+id);
+      } else {
+        this.errorMessage = 'No loan ID provided';
+        this.router.navigate(['/loans']);
+      }
+    });
   }
 
   loadLoanDetails(id: number): void {

@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\3fab17d6-c6fd-4f3d-86c9-3e7cc68b3db2.JPG",
+      "PackagePath": "staticwebassets\\NationalIds\\3fab17d6-c6fd-4f3d-86c9-3e7cc68b3db2.JPG"
+    },
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\8433ca73-9b8e-41c6-9cde-96095c406d77.JPG",
+      "PackagePath": "staticwebassets\\NationalIds\\8433ca73-9b8e-41c6-9cde-96095c406d77.JPG"
+    },
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\NationalIds\\b9ec443d-eb63-4071-b81b-fd1e37cd7abd.jpeg",
+      "PackagePath": "staticwebassets\\NationalIds\\b9ec443d-eb63-4071-b81b-fd1e37cd7abd.jpeg"
+    },
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\bdfe0923-70b4-4fb6-b5af-be01bef4c48f.JPG",
+      "PackagePath": "staticwebassets\\SalarySlips\\bdfe0923-70b4-4fb6-b5af-be01bef4c48f.JPG"
+    },
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\cd5d8fbe-89f8-4ce8-a0f2-52e806319522.JPG",
+      "PackagePath": "staticwebassets\\SalarySlips\\cd5d8fbe-89f8-4ce8-a0f2-52e806319522.JPG"
+    },
+    {
+      "Id": "E:\\Bank Misr\\Solo Project\\BankLoanSystem\\BankLoanSystem\\BankLoanSystem.API\\wwwroot\\SalarySlips\\eae2ef86-42a9-4e70-890d-b185dc54e426.JPG",
+      "PackagePath": "staticwebassets\\SalarySlips\\eae2ef86-42a9-4e70-890d-b185dc54e426.JPG"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x86\\staticwebassets\\msbuild.BankLoanSystem.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x86\\staticwebassets\\msbuild.BankLoanSystem.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x86\\staticwebassets\\msbuild.build.BankLoanSystem.API.props",
+      "PackagePath": "build\\BankLoanSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.BankLoanSystem.API.props",
+      "PackagePath": "buildMultiTargeting\\BankLoanSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.BankLoanSystem.API.props",
+      "PackagePath": "buildTransitive\\BankLoanSystem.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
