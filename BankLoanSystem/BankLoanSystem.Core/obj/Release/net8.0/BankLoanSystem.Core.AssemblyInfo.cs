@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankLoanSystem.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd78ae9902aabb6addfb2a2184db0cb3c6448082")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+403dceb96a1d8222d1a6f93c232a3555b406ee76")]
 [assembly: System.Reflection.AssemblyProductAttribute("BankLoanSystem.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankLoanSystem.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

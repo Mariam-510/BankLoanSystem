@@ -148,6 +148,5 @@ namespace BankLoanSystem.API.Controllers
         //    return StatusCode(result.StatusCode, result);
         //}
 
-
     }
 }
