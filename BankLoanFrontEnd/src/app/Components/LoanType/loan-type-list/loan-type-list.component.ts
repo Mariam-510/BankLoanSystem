@@ -108,7 +108,7 @@ export class LoanTypeListComponent implements OnInit {
   }
 
   editLoanType(id: number): void {
-    this.router.navigate(['/loan-types/edit', id]);
+    this.router.navigate(['/loan-types/edit'], { queryParams: { id: id } });
   }
 
   deleteLoanType(id: number): void {

@@ -1,4 +1,3 @@
-// loan-type-edit.component.ts
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
@@ -32,8 +31,15 @@ export class EditLoanTypeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.typeId = Number(this.route.snapshot.paramMap.get('id'));
-    this.loadLoanType();
+    this.route.queryParams.subscribe(params => {
+      this.typeId = Number(params['id']);
+      if (this.typeId) {
+        this.loadLoanType();
+      } else {
+        this.errorMessage = 'No loan type ID provided';
+        this.router.navigate(['/loan-types']);
+      }
+    });
   }
 
   loadLoanType(): void {

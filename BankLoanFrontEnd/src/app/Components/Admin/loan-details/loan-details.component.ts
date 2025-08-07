@@ -30,12 +30,16 @@ export class LoanDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.loadLoanDetails(+id);
-    }
+    this.route.queryParams.subscribe(params => {
+      const id = params['id'];
+      if (id) {
+        this.loadLoanDetails(+id);
+      } else {
+        this.errorMessage = 'No loan ID provided';
+        this.router.navigate(['admin/dashboard']);
+      }
+    });
   }
-
   loadLoanDetails(id: number): void {
     this.isLoading = true;
     this.loanService.getLoanById(id).subscribe({
